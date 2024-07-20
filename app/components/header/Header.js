@@ -1,6 +1,6 @@
 import { isMobile } from "react-device-detect";
 
-import styles from "./Header.module.css";
+import styles from "./header.module.css";
 import CallIcon from "../../../assets/icon/callicon.svg";
 
 export default function Header() {
