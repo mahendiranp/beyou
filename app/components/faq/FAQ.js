@@ -1,4 +1,4 @@
-import styles from "./FAQ.module.css";
+import styles from "./faq.module.css";
 
 export const FAQ = () => {
   return (
