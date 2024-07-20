@@ -1,0 +1,133 @@
+.footer{
+    background-color: var(--bg-gray);
+    border-radius: 30px 30px 0px 0px;
+    padding: 80px 0px 40px 0px;
+    margin-top: -30px;
+}
+.info{
+    font-family: worksans-regular;
+    font-size: 88px;
+    text-align: center;
+    opacity: .10;
+    font-weight: 100;
+    letter-spacing: -10px;
+}
+.info span {
+    font-family: EditorsNote-Italic;
+    letter-spacing:normal
+}
+
+.contactSection{
+    border: 1px solid #DCDDE9;
+    border-left: 0px;
+    border-right: 0px;
+    margin-top: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.contactDetails{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contacts, .socialMedias{
+    display: flex;
+}
+.contacts{
+    flex-grow: 1;
+    justify-content: space-evenly;
+}
+.socialMedias{
+    flex-shrink: 5;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    width: 130px;
+    height: 62px;
+}
+
+.socialMediaIcons img{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
+.labels{
+    font-family: worksans-regular;
+    font-weight: 100;
+    padding-right: 20px
+}
+.labels span{
+    font-weight: 600;
+}
+
+.emailIcon{
+    background-image: url(../../../assets/icon/mailicon.png);
+    background-repeat: no-repeat;
+    background-size: 16px 15px;
+    padding-left: 26px;
+    padding-top: 0px;
+    background-position: left;
+}
+
+.callIcon{
+    background-image: url(../../../assets/icon/call.png);
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    padding-left: 26px;
+    padding-top: 0px;
+    background-position: left;
+}
+
+.locationIcon{
+    background-image: url(../../../assets/icon/mark.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding-left: 26px;
+    padding-top: 0px;
+    background-position: left;
+}
+
+.copyright{
+    font-family: worksans-regular;
+    text-align: center;
+    padding-top: 15px;
+}
+
+@media screen and (max-width: 960px) {
+.info{
+    font-size: 48px;
+    letter-spacing: -5px;
+}
+.info span{
+    font-size: 64px;
+}
+.logo img{
+    width: 90px;
+    height: 42px;
+}
+
+.contacts, .contactDetails{
+    flex-flow: column;
+    align-items: center;
+}
+.socialMediaIcons img{
+    width: 48px;
+    height: 48px;
+    margin: 5px;
+}
+.contacts{
+    padding-top: 20px;
+}
+.labels{
+    margin-bottom: 26px;
+    padding-right: 0px;
+}
+}

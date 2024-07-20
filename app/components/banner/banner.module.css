@@ -1,0 +1,30 @@
+.banners{
+    background-color: var(--primary-color);
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+}
+.video {
+    width: 100%;
+    height: auto;
+  }
+.info {
+    font-family: EditorsNote-light;
+    padding: 200px;
+    font-size: 72px;
+    color: var(--white);
+    text-align: center;
+    font-weight: 100;
+}
+
+.info span{
+    font-family: EditorsNote-Italic;
+}
+
+@media screen and (max-width: 960px) {
+.info{
+    font-size: 40px;
+    padding: 0px 10px;
+
+}
+}

@@ -1,3 +1,63 @@
-.para{
-    font-family: var(--EditorsNote);
+.header{
+    display: flex;
+    padding: 16px 5px;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    box-shadow: 0px 4px 4px 0px #00000029;
+}
+.headerbg{
+    background-color: var(--white);
+    width: 100%;
+}
+.logo{
+    width: 110px;
+    height: 52px;
+}
+.leftSection, .rightSection{
+    display: flex;
+}
+.leftSection .text{
+    font-family: worksans-regular;
+    align-content: center;
+    font-weight: 400;
+    padding: 10px 10px;
+}
+.rightSection .text{
+    font-weight: 400;
+    align-content: center;
+    font-family: worksans-regular;
+    margin-right: 15px;
+    text-align: right;
+}
+.rightSection .text span{
+    font-weight: 500;
+}
+
+.infomessage{
+    width: 100%;
+    background-color: #EBECEE;
+    padding: 10px;
+    text-align: center;
+    font-family: worksans-regular;
+    font-size: 13px;
+}
+
+
+@media screen and (max-width: 960px) {
+    .leftSection{
+        flex-flow: column;
+    }
+    .leftSection .text{
+        padding: 10px 0px;
+    }
+    .leftSection span {
+        font-weight: 500;
+    }
+
+    .logo{
+        width: 95px;
+        height: 45px;
+    }
+
 }
