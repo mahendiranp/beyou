@@ -11,6 +11,7 @@
   --bg-light: #F4E7DE;
   --bg-dark:#323A4F;
   --bg-gray: #F4F5F9;
+  --bg-orange: #E9D5C7;
 
   --border-dark:#323A4F;
 
@@ -142,6 +143,17 @@ body {
 a{
   text-decoration: none;
   color: inherit;
+}
+
+
+.beyou{
+  font-family: EditorsNote-light;
+  
+  font-weight: 100;
+}
+.beyou span{
+  font-family: EditorsNote-italic;
+  font-style: italic;
 }
 
 
