@@ -12,6 +12,7 @@
   --bg-dark:#323A4F;
   --bg-gray: #F4F5F9;
   --bg-orange: #E9D5C7;
+  --bg-yellow: #F6EFE7;
 
   --border-dark:#323A4F;
 
@@ -120,9 +121,98 @@ body {
 .heading span {
   font-family: EditorsNote-italic;
   color: var(--text-primary);
-  
 }
 
+
+.swiper-next {
+  position: relative;
+  display: block;
+  padding: 1em 2em 1em 1em;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  background: transparent;
+  border: 0px;
+}
+.swiper-next:after, .swiper-next:before {
+  content: "";
+  display: block;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+}
+.swiper-next:before {
+  top: 50%;
+  right: 1em;
+  width: 24px;
+  height: 24px;
+  transform-origin: 50% 50%;
+  transform: translate(0, -0.5em) rotate(49deg);
+  box-shadow: inset -0.1em 0.1em 0 0 #e74c3c;
+  border-radius: 0 0.15em 0 0;
+}
+.swiper-next:after {
+  top: 50%;
+  right: 0.9em;
+  width: 1.5em;
+  height: 0.1em;
+  background-color: #e74c3c;
+  transform: translate(0em, -0.13em);
+}
+
+.swiper-next.disabled:before{
+  box-shadow: inset 0.1em -0.1em 0 0 var(--bg-gray);
+}
+.swiper-next.disabled:after{
+  background-color: var(--bg-gray);
+}
+
+.swiper-prev {
+  position: relative;
+  display: block;
+  padding: 1em 2em 1em 1em;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  background: transparent;
+  border: 0px;
+}
+.swiper-prev:after, .swiper-prev:before {
+  content: "";
+  display: block;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+}
+.swiper-prev:before {
+  top: 50%;
+  right: 1em;
+  width: 24px;
+  height: 24px;
+  transform-origin: 50% 50%;
+  transform: translate(0, -0.5em) rotate(42deg);
+  box-shadow: inset 0.1em -0.1em 0 0 #e74c3c;
+  border-radius: 0 0 0 0.15em;
+}
+.swiper-prev:after {
+  top: 50%;
+  left: 1.2em;
+  width: 1.5em;
+  height: 0.1em;
+  transform: translate(0em, -0.13em);
+  background-color: #e74c3c;
+}
+
+.navigationlink{
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.swiper-prev.disabled:before{
+  box-shadow: inset 0.1em -0.1em 0 0 var(--bg-gray);
+}
+.swiper-prev.disabled:after{
+  background-color: var(--bg-gray);
+}
 
 
 .icon {

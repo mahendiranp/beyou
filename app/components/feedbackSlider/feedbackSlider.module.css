@@ -1,0 +1,42 @@
+
+.swiper {
+    margin-top: 20px;
+  }
+  
+.swiperList {
+    background: var(--white);
+    display: flex;
+    flex-flow: column;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  .feedback{
+    display: flex;
+    font-family: worksans-regular;
+    font-size: 16px;
+    line-height: 26px;
+  }
+.authorDetails{
+    display: flex;
+    flex-flow: column;
+    padding-top: 15px;
+}
+.name{
+    font-family: EditorsNote-Bold
+}
+.cty{
+    font-family: worksans-italic;
+    font-style: italic;
+}
+.prev {
+    left: 63% !important;
+    top: 40% !important;
+    transform: rotate(90deg);
+    transform-origin: left center;
+  }
+.next {
+    left: 63% !important;
+    bottom: 49% !important;
+    transform: rotate(90deg);
+    transform-origin: left center;
+  }
