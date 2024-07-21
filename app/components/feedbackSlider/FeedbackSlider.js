@@ -8,7 +8,7 @@ import { Rating } from "react-simple-star-rating";
 import "swiper/css";
 import "swiper/css/navigation";
 
-export const FeedbackSlider = () => {
+export default function FeedbackSlider() {
   return (
     <>
       {" "}
@@ -189,7 +189,7 @@ export const FeedbackSlider = () => {
       </Swiper>
     </>
   );
-};
+}
 
 const SwiperButtonNext = ({ children }) => {
   const swiper = useSwiper();

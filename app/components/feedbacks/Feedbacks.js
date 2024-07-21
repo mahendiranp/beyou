@@ -2,9 +2,9 @@ import styles from "./feedbacks.module.css";
 import quationLeft from "../../../assets/images/quotation-2.png";
 import quationRight from "../../../assets/images/quotation-1.png";
 import quationBeYouLogo from "../../../assets/images/beyou-circle.png";
-import { FeedbackSlider } from "../feedbackSlider/feedbackSlider";
+import FeedbackSlider from "../feedbackSlider/FeedbackSlider";
 
-export default Feedbacks = () => {
+export default function Feedbacks() {
   return (
     <div className={`${styles.feedbacks}  w-100`}>
       <div className="container">
@@ -23,4 +23,4 @@ export default Feedbacks = () => {
       </div>
     </div>
   );
-};
+}
