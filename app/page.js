@@ -5,8 +5,8 @@ import Footer from "./components/footer/Footer";
 import Banner from "./components/banner/Banner";
 import BookingSteps from "./components/bookingsteps/BookingSteps";
 import Choices from "./components/choices/Choices";
-import { Faq } from "./components/faq/FAQ";
-import { Feedbacks } from "./components/feedbacks/Feedbacks";
+import Faq from "./components/faq/";
+import Feedbacks from "./components/feedbacks/Feedbacks";
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -15,7 +15,7 @@ export default function Home() {
       <BookingSteps />
       <Choices />
       <Feedbacks />
-      <FAQ />
+      <Faq />
       <Footer />
     </main>
   );
