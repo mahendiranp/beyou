@@ -1,6 +1,6 @@
 import styles from "./faq.module.css";
 
-export const FAQ = () => {
+export const Faq = () => {
   return (
     <div className={`${styles.faqSection}  w-100`}>
       <div className={`${styles.faqContainer} container`}>

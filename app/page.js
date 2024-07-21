@@ -5,7 +5,7 @@ import Footer from "./components/footer/Footer";
 import Banner from "./components/banner/Banner";
 import BookingSteps from "./components/bookingsteps/BookingSteps";
 import Choices from "./components/choices/Choices";
-import { FAQ } from "./components/faq/FAQ";
+import { Faq } from "./components/faq/FAQ";
 import { Feedbacks } from "./components/feedbacks/Feedbacks";
 export default function Home() {
   return (
