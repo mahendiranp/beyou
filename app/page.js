@@ -6,7 +6,8 @@ import Banner from "./components/banner/Banner";
 import BookingSteps from "./components/bookingsteps/BookingSteps";
 import Choices from "./components/choices/Choices";
 import Feedbacks from "./components/feedbacks/Feedbacks";
-//import FaqSection from "./components/faqSection/FaqSection";
+import FaqSection from "./components/faqSection/FaqSection";
+import DesignerMessage from "./components/designerMessage/DesignerMessage";
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -14,8 +15,9 @@ export default function Home() {
       <Banner />
       <BookingSteps />
       <Choices />
+      <DesignerMessage />
       <Feedbacks />
-      {/* <FaqSection /> */}
+      <FaqSection />
       <Footer />
     </main>
   );

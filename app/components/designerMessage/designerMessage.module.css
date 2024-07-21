@@ -1,0 +1,97 @@
+.designerMessage{
+    background-color: var(--bg-darkBlue);
+    border-radius: 30px 30px 0px 0px;
+    padding: 80px 50px 140px 50px;
+    margin-top: -30px;
+    color: var(--white);
+}
+.messageSection{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 40px;
+}
+.title{
+    letter-spacing: -1.32px;
+    font-family: EditorsNote-light;
+    font-size: 66px;
+    font-weight: 100;
+}
+.title span{
+    font-style: italic;
+    color: var(--secondary-color);
+    letter-spacing: normal;
+}
+
+.message{
+    font-family: EditorsNote-light;
+    font-size: 48px;
+    color: var(--secondary-color);
+    font-style: italic;
+    font-weight: 100;
+    line-height: 54px;
+    letter-spacing: -0.96px;
+    border-left: 2px solid var(--secondary-color);
+    padding:00px 0 00px 50px;
+    margin: 50px 0px;
+}
+.name{
+    color: var(--white);
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 200;
+    line-height: normal;
+}
+.description{
+    font-family: worksans-regular;
+    font-weight: 400;
+    line-height: 150%; 
+    letter-spacing: -0.352px;
+    font-size: 16px;
+    padding: 10px 0px
+}
+
+.rightSection{
+    position: relative;
+}
+
+.rightSection img{
+    object-fit: cover;
+    color: transparent;
+    height: 100%;
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 960px) {
+    .designerMessage{
+        padding: 40px 16px;
+    }
+    .messageSection {
+        display: flex;
+        gap: 40px;
+        flex-flow: column-reverse;
+        margin-bottom: 80px;
+    }
+    .title{
+        text-align: center;
+        padding-bottom: 33px;
+        font-size: 32px;
+    }
+    .message{
+        padding: 0px 0 0px 0px;
+        margin: -200px 0px 10px;
+        text-align: center;
+        border-left: 0px;
+        position: absolute;
+        bottom: 0px;
+    }
+    .rightSection img{
+        
+            border-radius: 30px 30px 0 0;
+            width: 100%;
+            object-position: right;
+            height: revert-layer;
+        
+    }
+    
+}
