@@ -4,7 +4,7 @@ import quationRight from "../../../assets/images/quotation-1.png";
 import quationBeYouLogo from "../../../assets/images/beyou-circle.png";
 import { FeedbackSlider } from "../feedbackSlider/feedbackSlider";
 
-export const Feedbacks = () => {
+export default Feedbacks = () => {
   return (
     <div className={`${styles.feedbacks}  w-100`}>
       <div className="container">
