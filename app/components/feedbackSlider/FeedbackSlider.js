@@ -2,7 +2,7 @@
 
 import { Swiper, SwiperSlide, useSwiper, useSwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-import styles from "./feedbackSlider.module.css";
+import styles from "./feedbackslider.module.css";
 import { Rating } from "react-simple-star-rating";
 
 import "swiper/css";
