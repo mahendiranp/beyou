@@ -101,7 +101,7 @@ letter-spacing: -0.06rem;
     .gallery {
         display: grid;
         grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(16, 5vw);
+        grid-template-rows: repeat(20, 5vw);
         grid-gap: 3rem; 
       }
 /* col 1 */
@@ -161,6 +161,6 @@ letter-spacing: -0.06rem;
     grid-column-start: 5;
     grid-column-end: 9;
     grid-row-start: 15;
-    grid-row-end: 18;
+    grid-row-end: 20;
   }
 }
