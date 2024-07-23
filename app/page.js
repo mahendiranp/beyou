@@ -8,6 +8,7 @@ import Choices from "./components/choices/Choices";
 import Feedbacks from "./components/feedbacks/Feedbacks";
 import FaqSection from "./components/faqSection/FaqSection";
 import DesignerMessage from "./components/designerMessage/DesignerMessage";
+import Works from "./components/works/Works";
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -16,6 +17,7 @@ export default function Home() {
       <BookingSteps />
       <Choices />
       <DesignerMessage />
+      <Works />
       <Feedbacks />
       <FaqSection />
       <Footer />

@@ -247,6 +247,15 @@ a{
   font-style: italic;
 }
 
+.galleryImg figcaption{
+  padding: 10px 0px;
+  text-align: center;
+  font-size: .70rem;
+  font-family: worksans-regular;
+  line-height: normal;
+letter-spacing: -0.0375rem;
+}
+
 
 
 .view-ondesktop{
