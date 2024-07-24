@@ -1,7 +1,7 @@
 import { isMobile } from "react-device-detect";
 
 import styles from "./header.module.css";
-import CallIcon from "../../../assets/icon/callicon.svg";
+import CallIcon from "../../../assets/icon/callicon-dark.png";
 
 export default function Header() {
   console.log(isMobile);
@@ -18,10 +18,11 @@ export default function Header() {
               Serviceable in and around <span>HSR & Haralur - Bengaluru</span>
             </p>
             <button className="btn-light">
-              {/* <img src={CallIcon.src} alt="Icon description" /> */}
-              <object type="image/svg+xml" data={CallIcon.src} className="icon">
-                Bike
-              </object>
+              <img
+                className="btn-icon"
+                src={CallIcon.src}
+                alt="Icon description"
+              />
               <span className="view-onmobile">Book</span>
               <span className="view-ondesktop">Book a consultation</span>
             </button>

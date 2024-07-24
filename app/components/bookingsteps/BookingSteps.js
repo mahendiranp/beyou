@@ -1,4 +1,5 @@
 import styles from "./bookingSteps.module.css";
+import CallIcon from "../../../assets/icon/callicon-light.png";
 
 const data = [
   {
@@ -35,7 +36,10 @@ export default function BookingSteps() {
         </div>
       </div>
       <div className={`container w-100 ${styles.booknow}`}>
-        <button className="btn-dark">Book a consultation</button>
+        <button className="btn-dark">
+          <img src={CallIcon.src} className="btn-icon" />
+          Book now
+        </button>
       </div>
     </div>
   );

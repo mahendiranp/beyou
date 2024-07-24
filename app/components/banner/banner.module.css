@@ -1,5 +1,5 @@
 .banners{
-    background-color: var(--primary-color);
+    background-color: rgba(0, 0, 0, 0.30);
     min-height: 600px;
     display: flex;
     align-items: center;

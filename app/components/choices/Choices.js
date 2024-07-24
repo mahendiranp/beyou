@@ -1,4 +1,13 @@
+"use client";
+import React, { useEffect, useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Grid, Pagination } from "swiper/modules";
+
 import styles from "./choices.module.css";
+
+import "swiper/css/grid";
+import "swiper/css/pagination";
 
 const choices = [
   {
@@ -46,17 +55,72 @@ const choices = [
 ];
 
 export default function Choices() {
+  const [isStart, setIsstart] = useState(true);
   return (
     <div className={`${styles.choices} w-100`}>
       <div className="container">
         <div className="heading">
           Our <span>tailoring choices</span>
         </div>
-        <div className={styles.choicelist}>
+        <Swiper
+          updateOnWindowResize={true}
+          slidesPerView={3}
+          grid={{
+            rows: 3,
+            fill: "row",
+          }}
+          spaceBetween={30}
+          pagination={{
+            clickable: true,
+          }}
+          onReachEnd={() => {
+            console.log("end");
+          }}
+          onReachBeginning={() => {
+            console.log("start");
+            setIsstart(true);
+          }}
+          onSwiper={(swiper) => {
+            console.log(swiper);
+            console.log(swiper.slides);
+          }}
+          onSlideChange={() => setIsstart(false)}
+          modules={[Grid]}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+              grid: {
+                rows: 3,
+                fill: "row",
+              },
+            },
+            760: {
+              slidesPerView: 2,
+              grid: {
+                rows: 3,
+                fill: "row",
+              },
+            },
+            960: {
+              slidesPerView: 3,
+              grid: {
+                rows: 3,
+                fill: "row",
+              },
+            },
+          }}
+          className="mySwiper"
+        >
           {choices.map((value, index) => (
-            <List value={value} key={index} />
+            <SwiperSlide>
+              <List value={value} />
+            </SwiperSlide>
           ))}
-        </div>
+          <div className="navigationlink">
+            <SwiperButtonPrev disable={isStart}></SwiperButtonPrev>
+            <SwiperButtonNext></SwiperButtonNext>
+          </div>
+        </Swiper>
       </div>
     </div>
   );
@@ -70,5 +134,20 @@ const List = ({ value }) => {
         {value.label} <span>Rs: {value.price} %</span>
       </div>
     </div>
+  );
+};
+
+const SwiperButtonNext = () => {
+  const swiper = useSwiper();
+  return (
+    <button className="swiper-next" onClick={() => swiper.slideNext()}></button>
+  );
+};
+
+const SwiperButtonPrev = (props) => {
+  console.log(props);
+  const swiper = useSwiper();
+  return (
+    <button className="swiper-prev" onClick={() => swiper.slidePrev()}></button>
   );
 };

@@ -1,5 +1,5 @@
 "use client";
-
+import React, { useEffect } from "react";
 import { Swiper, SwiperSlide, useSwiper, useSwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import styles from "./feedbackSlider.module.css";
@@ -13,10 +13,16 @@ export default function FeedbackSlider() {
     <>
       {" "}
       <Swiper
-        navigation={false}
         slidesPerView={3}
         spaceBetween={30}
         className={styles.swiper}
+        navigation={false}
+        onReachEnd={() => {
+          console.log("end");
+        }}
+        onReachBeginning={() => {
+          console.log("start");
+        }}
         breakpoints={{
           0: {
             slidesPerView: 1,
@@ -191,20 +197,24 @@ export default function FeedbackSlider() {
   );
 }
 
-const SwiperButtonNext = ({ children }) => {
+const SwiperButtonNext = (props) => {
   const swiper = useSwiper();
   return (
-    <button className="swiper-next" onClick={() => swiper.slideNext()}>
-      {children}
-    </button>
+    <button
+      {...props}
+      className="swiper-next"
+      onClick={() => swiper.slideNext()}
+    ></button>
   );
 };
 
-const SwiperButtonPrev = ({ children }) => {
+const SwiperButtonPrev = (props) => {
   const swiper = useSwiper();
   return (
-    <button className="swiper-prev" onClick={() => swiper.slidePrev()}>
-      {children}
-    </button>
+    <button
+      {...props}
+      className="swiper-prev"
+      onClick={() => swiper.slidePrev()}
+    ></button>
   );
 };
