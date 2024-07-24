@@ -93,5 +93,9 @@
             height: revert-layer;
         
     }
+
+    .leftSection{
+        padding: 0px 30px;
+    }
     
 }

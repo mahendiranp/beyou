@@ -162,7 +162,7 @@ body {
   border-radius: 0 0em 0 0;
 }
 .swiper-next:after {
-  top: 44%;
+  top: 16px;
   width: 0.8em;
   height: 0.1em;
   background-color: var(--border-black);
@@ -204,7 +204,7 @@ body {
   border-radius: 0 0 0 0;
 }
 .swiper-prev:after {
-  top: 44%;
+  top: 16px;
   width: 0.9em;
   height: 0.1em;
   transform: translate(0em, -0.15em);

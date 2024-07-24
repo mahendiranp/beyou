@@ -52,6 +52,36 @@ const choices = [
     price: "999",
     colorcode: "#F4F0D9",
   },
+  {
+    title: "Topwear",
+    label: "Starting from",
+    price: "999",
+    colorcode: "#F4F0D9",
+  },
+  {
+    title: "Jumpsuit",
+    label: "Starting from",
+    price: "999",
+    colorcode: "#F4F0D9",
+  },
+  {
+    title: "Co-ord Sets",
+    label: "Starting from",
+    price: "999",
+    colorcode: "#F4F0D9",
+  },
+  {
+    title: "Pants & Shorts",
+    label: "Starting from",
+    price: "999",
+    colorcode: "#F4F0D9",
+  },
+  {
+    title: "Dresses",
+    label: "Starting from",
+    price: "999",
+    colorcode: "#F4F0D9",
+  },
 ];
 
 export default function Choices() {
@@ -65,10 +95,6 @@ export default function Choices() {
         <Swiper
           updateOnWindowResize={true}
           slidesPerView={3}
-          grid={{
-            rows: 3,
-            fill: "row",
-          }}
           spaceBetween={30}
           pagination={{
             clickable: true,
@@ -102,7 +128,7 @@ export default function Choices() {
               },
             },
             960: {
-              slidesPerView: 3,
+              slidesPerView: 4,
               grid: {
                 rows: 3,
                 fill: "row",

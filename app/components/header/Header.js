@@ -14,26 +14,25 @@ export default function Header() {
             <p className={styles.text}>Online fashion boutique</p>
           </div>
           <div className={styles.rightSection}>
-            <p className={`${styles.text} view-ondesktop`}>
+            {/* <p className={`${styles.text} view-ondesktop`}>
               Serviceable in and around <span>HSR & Haralur - Bengaluru</span>
-            </p>
+            </p> */}
             <button className="btn-light">
               <img
                 className="btn-icon"
                 src={CallIcon.src}
                 alt="Icon description"
               />
-              <span className="view-onmobile">Book</span>
-              <span className="view-ondesktop">Book a consultation</span>
+              <span>Book</span>
             </button>
           </div>
         </div>
       </div>
-      <div className="view-onmobile">
+      {/* <div className="view-onmobile">
         <p className={`${styles.infomessage}`}>
           Serviceable in and around <span>HSR & Haralur - Bengaluru</span>
         </p>
-      </div>
+      </div> */}
     </div>
   );
 }
