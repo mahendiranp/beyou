@@ -1,7 +1,7 @@
 .choices{
     background-color: var(--white);
     border-radius: 30px 30px 0px 0px;
-    padding: 80px 0px 140px 0px;
+    padding: 5rem;
     margin-top: -30px;
 }
 .choicelist{
@@ -37,10 +37,18 @@
     font-weight: 400;
 }
 
+.heading{
+   padding-bottom: 3rem; 
+}
+
 @media screen and (max-width: 960px) {
     .choices{
-        padding: 60px 30px 80px 30px;
+        padding: 3rem 1.5rem 6rem;
     }
+    .heading{
+        padding-bottom: 1.5rem; 
+     }
+     
     .listview{
         padding: 20px;
         display: flex;

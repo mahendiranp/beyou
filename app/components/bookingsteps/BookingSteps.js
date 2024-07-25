@@ -26,7 +26,7 @@ export default function BookingSteps() {
   return (
     <div className={`${styles.background} w-100`}>
       <div className="container">
-        <h3 className="heading">
+        <h3 className={`heading ${styles.heading}`}>
           From concept to closet in <span>four easy steps</span>
         </h3>
         <div className={styles.listview}>
@@ -36,7 +36,7 @@ export default function BookingSteps() {
         </div>
       </div>
       <div className={`container w-100 ${styles.booknow}`}>
-        <button className="btn-dark">
+        <button className={`btn-dark`}>
           <img src={CallIcon.src} className="btn-icon" />
           Book now
         </button>

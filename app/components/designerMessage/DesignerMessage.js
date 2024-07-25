@@ -41,12 +41,15 @@ export default function () {
             </p>
           </div>
           <div className={styles.rightSection}>
-            <Image
-              src={DesignerImage}
-              width={500}
-              height={500}
-              alt="Picture of the author"
-            />
+            <div className={styles.gradientEffect}>
+              <Image
+                src={DesignerImage}
+                width={500}
+                height={500}
+                alt="Picture of the author"
+                className=""
+              />
+            </div>
             <h5 className={`${styles.message} view-onmobile`}>
               “ I believe in discovering my own style, being comfortable &
               confident.”

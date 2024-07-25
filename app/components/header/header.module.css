@@ -1,6 +1,6 @@
 .header{
     display: flex;
-    padding: 16px 5px;
+    padding: 1rem;
     justify-content: space-between;
     width: 100%;
     align-items: center;
@@ -17,10 +17,12 @@
     display: flex;
 }
 .leftSection .text{
-    font-family: worksans-regular;
+    font-family: EditorsNote-Regular;
     align-content: center;
     font-weight: 400;
-    padding: 10px 10px;
+    padding: 0px 10px;
+    font-size: 0.8125rem;
+    line-height: 1.375rem; /* 169.231% */
 }
 .rightSection .text{
     font-weight: 400;
@@ -48,7 +50,7 @@
         flex-flow: column;
     }
     .leftSection .text{
-        padding: 10px 0px;
+        padding: 0px 0px;
     }
     .leftSection span {
         font-weight: 500;

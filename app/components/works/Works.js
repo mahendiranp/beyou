@@ -1,7 +1,6 @@
 import styles from "./works.module.css";
 import Image from "next/image";
 
-import DesignerImage from "../../../assets/photos/designer-photo.jpeg";
 import Image1 from "../../../assets/photos/DSCF0431.png";
 import Image9 from "../../../assets/photos/DSCF0666.png";
 import Image7 from "../../../assets/photos/DSCF1322.png";
@@ -16,7 +15,7 @@ export default function () {
   return (
     <div className={`${styles.works} w-100`}>
       <div className="container">
-        <h3 className="heading">
+        <h3 className={`${styles.headingText} heading`}>
           Our <span>notable work</span>
         </h3>
         <div className={styles.gallery}>

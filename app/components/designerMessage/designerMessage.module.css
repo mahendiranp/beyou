@@ -84,6 +84,7 @@
         border-left: 0px;
         position: absolute;
         bottom: 0px;
+        z-index: 1;
     }
     .rightSection img{
         
@@ -97,5 +98,17 @@
     .leftSection{
         padding: 0px 30px;
     }
-    
+    .gradientEffect{
+        position: relative;
+    }
+    .gradientEffect::before{
+        content: "";
+        background: linear-gradient(0deg, rgba(17,21,47,1) 0%, rgba(255,255,255,0) 100%);
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        bottom: 0px;
+        z-index: 1;
+        height: 100px;
+    }
 }

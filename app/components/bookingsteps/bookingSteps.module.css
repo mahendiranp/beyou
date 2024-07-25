@@ -1,13 +1,16 @@
 .background{
     background-color: var(--bg-light);
-    border-radius: 30px 30px 0px 0px;
-    padding: 80px 0px 40px 0px;
+    border-radius: 2.5rem 2.5rem 0rem 0rem;
+    padding: 5rem 5rem 7.5rem 5rem;
     margin-top: -30px;
+}
+
+.heading{
+    padding-bottom: 3rem;
 }
 .listview{
     display: flex;
     flex-flow: row;
-    padding: 10px;
 }
 .list{
     padding: 10px;
@@ -16,32 +19,38 @@
 
 .title{
     color: var(--primary-color);
- font-family: EditorsNote-light;
- font-size: 32px;
- letter-spacing: 2px;
- padding-bottom: 10px;
- position: relative;
-
+    font-family: EditorsNote-light;
+    font-size: 2rem;
+    letter-spacing: -0.04rem;
+    padding-bottom: 0.63rem;
+    position: relative;
 }
 
 .content{
-    font-family: worksans-regularr;
-    font-size: 16px;
+    font-family: worksans-regular;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.375rem;
+    letter-spacing: -0.04rem;
 }
 
 .booknow{
     display: flex;
     justify-content: center;
-    padding: 20px 0px;
+    padding: 5rem 0 0;
     margin-bottom: 20px;
 }
 
 .booknow button{
     font-size: 20px;
+    padding: 1rem 3rem;
 }
 
 
 @media screen and (max-width: 960px) {
+    .background{
+        padding: 3rem 2rem
+    }
     .listview{
         padding: 20px;
         display: flex;
@@ -51,5 +60,20 @@
         display: flex;
         flex-flow: column;
         align-items: center;
+    }
+    .heading{
+        font-size: 2rem;
+        letter-spacing: -0.06215rem;
+        padding-bottom: 0.63rem;
+        position: relative;
+        font-weight: 100;
+    }
+    .content{
+        text-align: center;
+    }
+
+    .booknow{
+        padding: 1.5rem 0 0;
+        margin-bottom: 3rem;
     }
 }

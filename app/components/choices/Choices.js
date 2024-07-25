@@ -89,7 +89,7 @@ export default function Choices() {
   return (
     <div className={`${styles.choices} w-100`}>
       <div className="container">
-        <div className="heading">
+        <div className={`heading ${styles.heading}`}>
           Our <span>tailoring choices</span>
         </div>
         <Swiper
