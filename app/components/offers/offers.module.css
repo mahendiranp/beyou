@@ -12,12 +12,11 @@
     justify-content: center;
 }
 .offerName{
-    font-family: worksans-light;
-    font-size: 22px;
+    font-family: EditorsNote-Regular;
+    font-size: 1.375rem;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     line-height: normal;
-    letter-spacing: -0.88px;
 }
 .offerValue{
     color: var(--secondary-color);

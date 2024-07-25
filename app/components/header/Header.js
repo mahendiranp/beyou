@@ -23,7 +23,7 @@ export default function Header() {
                 src={CallIcon.src}
                 alt="Icon description"
               />
-              <span>Book</span>
+              <span>Book now</span>
             </button>
           </div>
         </div>
