@@ -17,14 +17,14 @@ export default function Header() {
             {/* <p className={`${styles.text} view-ondesktop`}>
               Serviceable in and around <span>HSR & Haralur - Bengaluru</span>
             </p> */}
-            <button className="btn-light">
+            <a className="btn-light" href="tel:+919019895174">
               <img
                 className="btn-icon"
                 src={CallIcon.src}
                 alt="Icon description"
               />
               <span>Book now</span>
-            </button>
+            </a>
           </div>
         </div>
       </div>

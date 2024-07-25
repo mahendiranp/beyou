@@ -9,6 +9,7 @@ export default function Banner() {
   return (
     <main className={`${styles.banners} w-100`}>
       <div className={`${styles.positionReleative} w-100`}>
+        <div className={styles.darkBg}></div>
         <div className={`${styles.bannerMobileView} w-100 view-onmobile`}>
           <img src="./banner-mobile.png" className={styles.bannerMobileView} />
         </div>

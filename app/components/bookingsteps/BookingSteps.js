@@ -24,7 +24,7 @@ const data = [
 
 export default function BookingSteps() {
   return (
-    <div className={`${styles.background} w-100`}>
+    <section className={`${styles.background} w-100`}>
       <div className="container">
         <h3 className={`heading ${styles.heading}`}>
           From concept to closet in <span>four easy steps</span>
@@ -36,21 +36,21 @@ export default function BookingSteps() {
         </div>
       </div>
       <div className={`container w-100 ${styles.booknow}`}>
-        <button className={`btn-dark`}>
+        <a className="btn-dark" href="tel:+919019895174">
           <img src={CallIcon.src} className="btn-icon" />
           Book now
-        </button>
+        </a>
       </div>
-    </div>
+    </section>
   );
 }
 
 const List = ({ title, content }) => {
   return (
     <div className={styles.list}>
-      <div>
+      <div className={styles.listOptions}>
         <h5 className={styles.title}>{title}</h5>
-        <div></div>
+        <div className={styles.listBorderStyle}></div>
       </div>
       <p className={styles.content}>{content}</p>
     </div>
