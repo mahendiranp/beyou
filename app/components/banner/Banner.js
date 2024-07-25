@@ -13,9 +13,9 @@ export default function Banner() {
           <img src="./banner-mobile.png" className={styles.bannerMobileView} />
         </div>
         <div className={`${styles.bannerDesktopView} w-100 view-ondesktop`}>
+          <img src={Image3.src} />
           <img src={Image1.src} />
           <img src={Image2.src} />
-          <img src={Image3.src} />
         </div>
         <h3 className={styles.info}>
           Made-to-order fashion with expert styling, delivered to you
