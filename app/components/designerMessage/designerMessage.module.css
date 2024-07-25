@@ -85,14 +85,13 @@
         position: absolute;
         bottom: 0px;
         z-index: 1;
+        font-size: 2.2rem;
     }
     .rightSection img{
-        
-            border-radius: 30px 30px 0 0;
-            width: 100%;
-            object-position: right;
-            height: revert-layer;
-        
+        border-radius: 30px 30px 0 0;
+        width: 100%;
+        object-position: right;
+        height: revert-layer;
     }
 
     .leftSection{
@@ -109,6 +108,6 @@
         position: absolute;
         bottom: 0px;
         z-index: 1;
-        height: 100px;
+        height: 400px;
     }
 }

@@ -95,7 +95,7 @@ export default function Choices() {
         <Swiper
           updateOnWindowResize={true}
           slidesPerView={3}
-          spaceBetween={30}
+          spaceBetween={15}
           pagination={{
             clickable: true,
           }}
@@ -114,7 +114,7 @@ export default function Choices() {
           modules={[Grid]}
           breakpoints={{
             0: {
-              slidesPerView: 1,
+              slidesPerView: 1.4,
               grid: {
                 rows: 3,
                 fill: "row",
