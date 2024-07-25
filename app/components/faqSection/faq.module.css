@@ -20,13 +20,13 @@
 
   .faqTitles{
     font-size: 66px;
-    font-family: EditorsNote-light;
+    font-family: EditorsNote-Thin;
     font-weight: 100;
   }
 
   .faqTitles span {
-    font-family: EditorsNote-italic;
     color: var(--text-primary);
+    font-style: italic;
   }
   .questions{
     display: flex;

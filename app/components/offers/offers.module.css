@@ -4,6 +4,7 @@
     padding:24px 50px 60px 50px;
     margin-top: -30px;
     color: var(--white);
+    position: relative;
 }
 
 .offerDetails{

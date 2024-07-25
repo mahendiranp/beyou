@@ -97,7 +97,8 @@ body {
   margin-right: 0.62rem;
 }
 .btn-light:hover{
-  background-color: transparent;
+  background-color: var(--bg-dark);
+  color: var(--white);
 }
 .btn-light span{
   padding-left: 12px;

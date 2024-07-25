@@ -18,7 +18,9 @@ export default function () {
               “ I believe in discovering my own style, being comfortable &
               confident.”
             </h5>
-            <div className={styles.name}>hi i’m , Pooja Shree</div>
+            <div className={styles.name}>
+              hi i’m, <span>Pooja Shree</span>
+            </div>
             <p className={styles.description}>
               Founder and lead designer at beyou. My journey in fashion began
               with a degree in fashion design and a diploma in fashion

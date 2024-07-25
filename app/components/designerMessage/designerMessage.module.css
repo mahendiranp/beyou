@@ -13,7 +13,7 @@
 }
 .title{
     letter-spacing: -1.32px;
-    font-family: EditorsNote-light;
+    font-family: EditorsNote-Thin;
     font-size: 66px;
     font-weight: 100;
 }
@@ -24,7 +24,7 @@
 }
 
 .message{
-    font-family: EditorsNote-light;
+    font-family: EditorsNote-Thin;
     font-size: 48px;
     color: var(--secondary-color);
     font-style: italic;
@@ -36,8 +36,9 @@
     margin: 50px 0px;
 }
 .name{
+    font-family: EditorsNote-Thin;
     color: var(--white);
-    font-size: 40px;
+    font-size: 2.5rem;
     font-style: italic;
     font-weight: 200;
     line-height: normal;
@@ -109,5 +110,14 @@
         bottom: 0px;
         z-index: 1;
         height: 400px;
+    }
+    .name{
+        font-size: 1.5rem;
+        font-weight: 200;
+        text-align: center;
+        padding-bottom: 1.5rem;
+    }
+    .name span{
+        font-weight: 300;
     }
 }
