@@ -40,6 +40,11 @@
 }
 
 @font-face {
+  font-family: EditorsNote-Thin;
+  src: url("../assets/fonts/editors-note/EditorsNote-Thin.otf");
+}
+
+@font-face {
   font-family: worksans-regular;
   src: url("../assets/fonts/work-sans/WorkSans-Regular.ttf");
 }
