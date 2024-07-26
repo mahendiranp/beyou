@@ -86,6 +86,7 @@ const choices = [
 
 export default function Choices() {
   const [isStart, setIsstart] = useState(true);
+  const [hideNavigation, setHideNavigation] = useState(false);
   return (
     <div className={`${styles.choices} w-100`}>
       <div className="container">
@@ -109,8 +110,9 @@ export default function Choices() {
           onSwiper={(swiper) => {
             console.log(swiper);
             console.log(swiper.slides);
+            setHideNavigation(swiper.destroyed);
           }}
-          onSlideChange={() => setIsstart(false)}
+          onSlideChange={(swiper) => console.log(swiper)}
           modules={[Grid]}
           breakpoints={{
             0: {

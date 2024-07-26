@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide, useSwiper, useSwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import styles from "./feedbackSlider.module.css";
@@ -8,7 +8,10 @@ import { Rating } from "react-simple-star-rating";
 import "swiper/css";
 import "swiper/css/navigation";
 
+const ObjectLength = 6;
 export default function FeedbackSlider() {
+  const [isStart, setIsstart] = useState(true);
+  const [isLast, setIsLast] = useState(false);
   return (
     <>
       {" "}
@@ -17,11 +20,17 @@ export default function FeedbackSlider() {
         spaceBetween={30}
         className={styles.swiper}
         navigation={false}
-        onReachEnd={() => {
-          console.log("end");
-        }}
-        onReachBeginning={() => {
-          console.log("start");
+        onSlideChange={(swiper) => {
+          if (swiper.realIndex === 0) {
+            setIsstart(true);
+          } else {
+            setIsstart(false);
+          }
+          if (swiper.realIndex === ObjectLength) {
+            setIsLast(true);
+          } else {
+            setIsLast(false);
+          }
         }}
         breakpoints={{
           0: {
@@ -189,8 +198,8 @@ export default function FeedbackSlider() {
           </div>
         </SwiperSlide>
         <div className="navigationlink">
-          <SwiperButtonPrev></SwiperButtonPrev>
-          <SwiperButtonNext></SwiperButtonNext>
+          {!isStart ? <SwiperButtonPrev /> : <SwiperButtonPrevDisbaled />}
+          {!isLast ? <SwiperButtonNext /> : <SwiperButtonNextDisabled />}
         </div>
       </Swiper>
     </>
@@ -208,6 +217,10 @@ const SwiperButtonNext = (props) => {
   );
 };
 
+const SwiperButtonPrevDisbaled = () => {
+  return <button className="swiper-prev swiper-prev-disabled"></button>;
+};
+
 const SwiperButtonPrev = (props) => {
   const swiper = useSwiper();
   return (
@@ -217,4 +230,8 @@ const SwiperButtonPrev = (props) => {
       onClick={() => swiper.slidePrev()}
     ></button>
   );
+};
+
+const SwiperButtonNextDisabled = () => {
+  return <button className="swiper-next swiper-next-disabled"></button>;
 };

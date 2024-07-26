@@ -11,19 +11,18 @@
 .listview{
     display: flex;
     flex-flow: row;
+    gap: 2rem;
 }
 .list{
-    padding: 10px;
     position: relative;
 }
 
 .title{
     color: var(--primary-color);
-    font-family: EditorsNote-light;
+    font-family: EditorsNote-Thin;
     font-size: 2rem;
-    letter-spacing: -0.04rem;
-    padding-bottom: 0.63rem;
     position: relative;
+    flex-grow: 1;
 }
 
 .content{
@@ -47,23 +46,35 @@
 }
 .listOptions{
 display: flex;
+padding-bottom: 0.63rem;
 }
 
 
 .listBorderStyle{
-
-    border-top: 1px dotted #ccc;
+    background-image: url('../../../assets/icon/arrow.png');
+    flex-shrink: 1;
+    min-width: 200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 20px;
 }
 
+
+@media screen and (min-width: 960px) {
+    .listBorderStyle.nobackground{
+        background-image: none;
+    }
+}
 
 @media screen and (max-width: 960px) {
     .background{
         padding: 3rem 2rem
     }
     .listview{
-        padding: 20px;
+        padding: 2rem 1rem;
         display: flex;
-        flex-flow:column
+        flex-flow: column;
+        gap: 2rem;
     }
     .list{
         display: flex;
@@ -84,5 +95,22 @@ display: flex;
     .booknow{
         padding: 1.5rem 0 0;
         margin-bottom: 3rem;
+    }
+    .listOptions{
+        display: flex;
+        flex-flow: column-reverse;
+        width: 100%;
+    }
+    .title{
+        text-align: center;
+    }
+    .listBorderStyle{
+        background-image: url('../../../assets/icon/arrow-mobile.png');
+        min-width: 200px;
+        background-repeat: no-repeat;
+        height: 60px;
+        background-position: center center;
+        background-size: 40px auto;
+        margin-bottom: 1.5rem;
     }
 }

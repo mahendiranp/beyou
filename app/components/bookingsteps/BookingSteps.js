@@ -30,9 +30,49 @@ export default function BookingSteps() {
           From concept to closet in <span>four easy steps</span>
         </h3>
         <div className={styles.listview}>
-          {data.map((value, index) => (
+          <div className={styles.list}>
+            <div className={styles.listOptions}>
+              <h5 className={styles.title}>Consult</h5>
+              <div className={styles.listBorderStyle}></div>
+            </div>
+            <p className={styles.content}>
+              Schedule your consultation for personalised design guidance.
+            </p>
+          </div>
+          <div className={styles.list}>
+            <div className={styles.listOptions}>
+              <h5 className={styles.title}>Design</h5>
+              <div className={styles.listBorderStyle}></div>
+            </div>
+            <p className={styles.content}>
+              We visit at you place, recommend styles, take precise
+              measurements.
+            </p>
+          </div>
+          <div className={styles.list}>
+            <div className={styles.listOptions}>
+              <h5 className={styles.title}>Stitch</h5>
+              <div className={styles.listBorderStyle}></div>
+            </div>
+            <p className={styles.content}>
+              You sit back and relax as our team brings your dream outfit to
+              life.
+            </p>
+          </div>
+          <div className={styles.list}>
+            <div className={styles.listOptions}>
+              <h5 className={styles.title}>Deliver</h5>
+              <div
+                className={`${styles.listBorderStyle} ${styles.nobackground}`}
+              ></div>
+            </div>
+            <p className={styles.content}>
+              Enjoy timely delivery and ongoing support for any adjustments.
+            </p>
+          </div>
+          {/* {data.map((value, index) => (
             <List key={index} title={value.title} content={value.content} />
-          ))}
+          ))} */}
         </div>
       </div>
       <div className={`container w-100 ${styles.booknow}`}>
