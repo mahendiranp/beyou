@@ -1,8 +1,15 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 // Import Swiper React components
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
-import { Grid, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Grid } from "swiper/modules";
+
+import {
+  SwiperButtonNext,
+  SwiperButtonNextDisabled,
+  SwiperButtonPrev,
+  SwiperButtonPrevDisbaled,
+} from "../SwiperButtons/SwiperButtons";
 
 import styles from "./choices.module.css";
 
@@ -86,7 +93,7 @@ const choices = [
 
 export default function Choices() {
   const [isStart, setIsstart] = useState(true);
-  const [hideNavigation, setHideNavigation] = useState(false);
+  const [isLast, setIsLast] = useState(false);
   return (
     <div className={`${styles.choices} w-100`}>
       <div className="container">
@@ -97,22 +104,18 @@ export default function Choices() {
           updateOnWindowResize={true}
           slidesPerView={3}
           spaceBetween={15}
-          pagination={{
-            clickable: true,
+          onSlideChange={(swiper) => {
+            if (swiper.activeIndex === 0) {
+              setIsstart(true);
+            } else {
+              setIsstart(false);
+            }
+            if (swiper.activeIndex === 3) {
+              setIsLast(true);
+            } else {
+              setIsLast(false);
+            }
           }}
-          onReachEnd={() => {
-            console.log("end");
-          }}
-          onReachBeginning={() => {
-            console.log("start");
-            setIsstart(true);
-          }}
-          onSwiper={(swiper) => {
-            console.log(swiper);
-            console.log(swiper.slides);
-            setHideNavigation(swiper.destroyed);
-          }}
-          onSlideChange={(swiper) => console.log(swiper)}
           modules={[Grid]}
           breakpoints={{
             0: {
@@ -123,7 +126,7 @@ export default function Choices() {
               },
             },
             760: {
-              slidesPerView: 2,
+              slidesPerView: 1.4,
               grid: {
                 rows: 3,
                 fill: "row",
@@ -140,13 +143,15 @@ export default function Choices() {
           className="mySwiper"
         >
           {choices.map((value, index) => (
-            <SwiperSlide>
+            <SwiperSlide key={index}>
               <List value={value} />
             </SwiperSlide>
           ))}
-          <div className="navigationlink">
-            <SwiperButtonPrev disable={isStart}></SwiperButtonPrev>
-            <SwiperButtonNext></SwiperButtonNext>
+          <div className={styles.hideSlideNavigation}>
+            <div className="navigationlink">
+              {!isStart ? <SwiperButtonPrev /> : <SwiperButtonPrevDisbaled />}
+              {!isLast ? <SwiperButtonNext /> : <SwiperButtonNextDisabled />}
+            </div>
           </div>
         </Swiper>
       </div>
@@ -162,20 +167,5 @@ const List = ({ value }) => {
         {value.label} <span>Rs: {value.price} %</span>
       </div>
     </div>
-  );
-};
-
-const SwiperButtonNext = () => {
-  const swiper = useSwiper();
-  return (
-    <button className="swiper-next" onClick={() => swiper.slideNext()}></button>
-  );
-};
-
-const SwiperButtonPrev = (props) => {
-  console.log(props);
-  const swiper = useSwiper();
-  return (
-    <button className="swiper-prev" onClick={() => swiper.slidePrev()}></button>
   );
 };
