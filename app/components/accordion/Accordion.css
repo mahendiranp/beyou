@@ -9,7 +9,7 @@
   .accordion {
 
     cursor: pointer;
-    padding: 18px 0;
+    padding-bottom: 0.62rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,11 +26,12 @@
   /* Style the accordion content title */
   .accordion__title {
     font-family: worksans-regular;
-    color: var(--text-primary);
-    font-size: 22px;
-    font-weight: 400;
+    color: var(--text-dark);
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 600;
     line-height: normal;
-    letter-spacing: -.44px;
+    letter-spacing: -0.0275rem;
   }
   
   /* Style the accordion chevron icon */
@@ -41,7 +42,7 @@
 
   .accordion__title__icon{
     font-family: worksans-regular;
-    color: var(--text-primary);
+    color: var(--text-dark);
     font-size: 22px;
   }
   
@@ -60,11 +61,11 @@
   .accordion__text {
     font-family: worksans-regular;
     color: var(--text-dark);
-    font-size: 20px;
-    padding: 0 10px 20px 0;
+    padding: 0 10px 1.5rem 0;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
-    letter-spacing: -.4px;
+    line-height: 1.5rem; /* 120% */
+    letter-spacing: -0.025rem;
   }
   
