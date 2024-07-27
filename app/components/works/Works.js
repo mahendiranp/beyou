@@ -20,77 +20,95 @@ export default function () {
         </h3>
         <div className={styles.gallery}>
           <figure className={`galleryImg  ${styles.galleryItem1}`}>
-            <Image
-              src={Image1}
-              alt="Gallery image 1"
-              className={styles.galleryImg}
-            />
+            <div className="product">
+              <Image
+                src={Image1}
+                alt="Gallery image 1"
+                className={styles.galleryImg}
+              />
+            </div>
             <figcaption className={styles.galleryDesc}>Kurtha set</figcaption>
           </figure>
           <figure className={`galleryImg  ${styles.galleryItem2}`}>
-            <Image
-              src={Image2}
-              alt="Gallery image 1"
-              className={styles.galleryImg}
-            />
+            <div className="product">
+              <Image
+                src={Image2}
+                alt="Gallery image 1"
+                className={styles.galleryImg}
+              />
+            </div>
             <figcaption className={styles.galleryDesc}>Blouse</figcaption>
           </figure>
           <figure className={`galleryImg  ${styles.galleryItem3}`}>
-            <Image
-              src={Image3}
-              alt="Gallery image 1"
-              className={styles.galleryImg}
-            />
+            <div className="product">
+              <Image
+                src={Image3}
+                alt="Gallery image 1"
+                className={styles.galleryImg}
+              />
+            </div>
             <figcaption className={styles.galleryDesc}>
               Embroidery Blouse
             </figcaption>
           </figure>
           <figure className={`galleryImg  ${styles.galleryItem4}`}>
-            <Image
-              src={Image4}
-              alt="Gallery image 1"
-              className={styles.galleryImg}
-            />
+            <div className="product">
+              <Image
+                src={Image4}
+                alt="Gallery image 1"
+                className={styles.galleryImg}
+              />
+            </div>
             <figcaption className={styles.galleryDesc}>Blouse</figcaption>
           </figure>
           <figure className={`galleryImg  ${styles.galleryItem5}`}>
-            <Image
-              src={Image5}
-              alt="Gallery image 1"
-              className={styles.galleryImg}
-            />
+            <div className="product">
+              <Image
+                src={Image5}
+                alt="Gallery image 1"
+                className={styles.galleryImg}
+              />
+            </div>
             <figcaption className={styles.galleryDesc}>Blouse</figcaption>
           </figure>
           <figure className={`galleryImg  ${styles.galleryItem6}`}>
-            <Image
-              src={Image6}
-              alt="Gallery image 1"
-              className={styles.galleryImg}
-            />
+            <div className="product">
+              <Image
+                src={Image6}
+                alt="Gallery image 1"
+                className={styles.galleryImg}
+              />
+            </div>
             <figcaption className={styles.galleryDesc}>Golden work</figcaption>
           </figure>
           <figure className={`galleryImg  ${styles.galleryItem7}`}>
-            <Image
-              src={Image7}
-              alt="Gallery image 1"
-              className={styles.galleryImg}
-            />
+            <div className="product">
+              <Image
+                src={Image7}
+                alt="Gallery image 1"
+                className={styles.galleryImg}
+              />
+            </div>
             <figcaption className={styles.galleryDesc}>Blouse</figcaption>
           </figure>
           <figure className={`galleryImg  ${styles.galleryItem8}`}>
-            <Image
-              src={Image8}
-              alt="Gallery image 1"
-              className={styles.galleryImg}
-            />
+            <div className="product">
+              <Image
+                src={Image8}
+                alt="Gallery image 1"
+                className={styles.galleryImg}
+              />
+            </div>
             <figcaption className={styles.galleryDesc}>Shorts</figcaption>
           </figure>
           <figure className={`galleryImg  ${styles.galleryItem9}`}>
-            <Image
-              src={Image9}
-              alt="Gallery image 1"
-              className={styles.galleryImg}
-            />
+            <div className="product">
+              <Image
+                src={Image9}
+                alt="Gallery image 1"
+                className={styles.galleryImg}
+              />
+            </div>
             <figcaption className={styles.galleryDesc}>Golden work</figcaption>
           </figure>
         </div>

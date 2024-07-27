@@ -43,7 +43,9 @@ export default function () {
             </p>
           </div>
           <div className={styles.rightSection}>
-            <div className={styles.gradientEffect}>
+            <div
+              className={`${styles.gradientEffect} ${styles.desktopImageSize}`}
+            >
               <Image
                 src={DesignerImage}
                 width={500}
