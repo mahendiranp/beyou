@@ -24,6 +24,7 @@
     font-size: 2rem;
     position: relative;
     flex-grow: 1;
+    letter-spacing: -0.04rem;
 }
 
 .content{
@@ -112,7 +113,9 @@ padding-bottom: 0.63rem;
         width: 100%;
     }
     .title{
+        font-size: 1.625rem;
         text-align: center;
+        letter-spacing: -0.01625rem;
     }
     .listBorderStyle{
         background-image: url('../../../assets/icon/arrow-mobile.png');
