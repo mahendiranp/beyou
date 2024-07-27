@@ -34,9 +34,10 @@
     font-weight: 300;
     font-size: 14px;
     padding-top: 0.25rem;
+    font-style: italic;
 }
 .listLabel span {
-    font-family: worksans-Italic;
+    font-family: worksans-light;
     font-weight: 400;
 }
 
