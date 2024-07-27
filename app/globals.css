@@ -48,6 +48,11 @@
 }
 
 @font-face {
+  font-family: EditorsNote-ThinItalic;
+  src: url("../assets/fonts/editors-note/EditorsNote-ThinItalic.otf");
+}
+
+@font-face {
   font-family: worksans-regular;
   src: url("../assets/fonts/work-sans/WorkSans-Regular.ttf");
 }
@@ -63,6 +68,8 @@
   font-family: worksans-thin;
   src: url("../assets/fonts/work-sans/WorkSans-Thin.ttf");
 }
+
+
 
 
 * {
@@ -141,7 +148,7 @@ body {
   text-align: center;
 }
 .heading span {
-  font-family: EditorsNote-Italic;
+  font-family: EditorsNote-ThinItalic;
   color: var(--text-primary);
   font-style: italic;
   font-weight: 200;
@@ -375,7 +382,7 @@ display: none;
     line-height: 2.375rem;
   }
   .heading span {
-    font-family: EditorsNote-Italic;
+    font-family: EditorsNote-ThinItalic;
     color: var(--text-primary);
     font-weight: 200;
   }

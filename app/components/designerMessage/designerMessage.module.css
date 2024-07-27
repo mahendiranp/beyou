@@ -18,7 +18,7 @@
     font-weight: 100;
 }
 .title span{
-    font-family: EditorsNote-Italic;
+    font-family: EditorsNote-ThinItalic;
     font-style: italic;
     color: var(--secondary-color);
     letter-spacing: normal;

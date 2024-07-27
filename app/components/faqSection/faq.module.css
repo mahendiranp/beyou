@@ -26,8 +26,7 @@
 
   .faqTitles span {
     color: var(--text-primary);
-    font-family: EditorsNote-Italic;
-    font-style: italic;
+    font-family: EditorsNote-ThinItalic;
   }
   .questions{
     display: flex;

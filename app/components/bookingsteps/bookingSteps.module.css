@@ -62,7 +62,7 @@ padding-bottom: 0.63rem;
 
 
 .btnWidth{
-    min-width: 200px;
+    min-width: 300px;
     display: flex;
     justify-content: center;
 }
