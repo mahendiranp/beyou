@@ -60,15 +60,15 @@
 .rightSection img{
     object-fit: cover;
     color: transparent;
-    transform: scale(1.3);
+    transform: scale(1.2);
     height: 100%;
 }
 
 @media screen and (min-width: 960px) {
 .desktopImageSize{
-    height: 100%;
+    height: 80%;
     overflow: hidden;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 }
 
