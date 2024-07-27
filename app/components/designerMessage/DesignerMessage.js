@@ -1,6 +1,6 @@
 import styles from "./designerMessage.module.css";
 import Image from "next/image";
-import DesignerImage from "../../../assets/photos/designer-photo.jpeg";
+import DesignerImage from "../../../assets/photos/designer-photo.png";
 
 export default function () {
   return (
