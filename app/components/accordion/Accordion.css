@@ -11,7 +11,7 @@
     cursor: pointer;
     padding-bottom: 18px 0;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     border: none;
     outline: none;
@@ -62,11 +62,12 @@
   .accordion__text {
     font-family: worksans-regular;
     color: var(--text-dark);
-    padding: 0 10px 1.5rem 0;
+    padding: 0 10px 0rem 0;
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5rem; /* 120% */
     letter-spacing: -0.025rem;
+    margin-bottom: 1.56rem;
   }
   
