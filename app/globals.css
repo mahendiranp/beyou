@@ -367,7 +367,7 @@ display: none;
   }
 
   .heading{
-    font-family: EditorsNote-light;
+    font-family: EditorsNote-Thin;
     font-size: 2rem;
     color: var(--text-dark);
     text-align: center;
@@ -375,7 +375,7 @@ display: none;
     line-height: 2.375rem;
   }
   .heading span {
-    font-family: EditorsNote-light;
+    font-family: EditorsNote-Italic;
     color: var(--text-primary);
     font-weight: 200;
   }
