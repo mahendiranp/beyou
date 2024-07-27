@@ -1,4 +1,5 @@
 import styles from "./faq.module.css";
+import Accordion from "../accordion/Accordion";
 
 const faqData = [
   {
@@ -61,10 +62,12 @@ export default function FaqSection() {
           <div className={styles.questions}>
             {faqData.map((value) => {
               return (
-                <div className={styles.question}>
-                  <h3>{value.question}</h3>
-                  <p>{value.answer}</p>
-                </div>
+                //<Accordion title="First Accordion" content="First Accordion content" />
+                // <div className={styles.question}>
+                //   <h3>{value.question}</h3>
+                //   <p>{value.answer}</p>
+                // </div>
+                <Accordion title={value.question} content={value.answer} />
               );
             })}
           </div>
