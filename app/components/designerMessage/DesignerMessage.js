@@ -4,7 +4,7 @@ import DesignerImage from "../../../assets/photos/designer-photo.jpeg";
 
 export default function () {
   return (
-    <div className={`${styles.designerMessage} w-100`}>
+    <div className={`${styles.designerMessage} w-100 zIndex1`}>
       <div className="container">
         <h3 className={`${styles.title} view-onmobile`}>
           Meet the <span>designer</span>

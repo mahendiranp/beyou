@@ -1,25 +1,32 @@
 
 .swiper {
-    margin-top: 20px;
+    margin-top: 3.75rem;
   }
   
 .swiperList {
     background: var(--white);
     display: flex;
     flex-flow: column;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 20px;
+    align-items: flex-start;
+  }
+  .rating{
+    padding-bottom: .80rem;
   }
   .feedback{
     display: flex;
     font-family: worksans-regular;
     font-size: 16px;
     line-height: 26px;
+    text-align: left;
   }
 .authorDetails{
     display: flex;
     flex-flow: column;
     padding-top: 15px;
+    align-items: flex-start;
+
 }
 .name{
     font-family: EditorsNote-Bold

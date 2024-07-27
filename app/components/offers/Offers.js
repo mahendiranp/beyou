@@ -2,7 +2,7 @@ import styles from "./offers.module.css";
 
 export default function Offers() {
   return (
-    <div className={`${styles.offers} w-100`}>
+    <div className={`${styles.offers} w-100 zIndex1`}>
       <div className="container">
         <div className={styles.offerDetails}>
           <div className={styles.offerName}>🎁 Special Launch Offer 🎁</div>

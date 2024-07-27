@@ -6,7 +6,7 @@ import FeedbackSlider from "../feedbackSlider/FeedbackSlider";
 
 export default function Feedbacks() {
   return (
-    <div className={`${styles.feedbacks}  w-100`}>
+    <div className={`${styles.feedbacks}  w-100 zIndex1`}>
       <div className="container">
         <div className={styles.feedbackTitle}>
           <div className={styles.quationLeft}>

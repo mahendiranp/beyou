@@ -50,7 +50,7 @@ const faqData = [
 
 export default function FaqSection() {
   return (
-    <div className={`${styles.faqSection}  w-100`}>
+    <div className={`${styles.faqSection}  w-100 zIndex1`}>
       <div className={`${styles.faqContainer} container`}>
         <div className={styles.leftSection}>
           <h3 className={styles.faqTitles}>

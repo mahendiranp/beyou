@@ -63,31 +63,31 @@ const choices = [
     title: "Topwear",
     label: "Starting from",
     price: "999",
-    colorcode: "#F4F0D9",
+    colorcode: "#F3E1E1",
   },
   {
     title: "Jumpsuit",
     label: "Starting from",
     price: "999",
-    colorcode: "#F4F0D9",
+    colorcode: "#E9F3E3",
   },
   {
     title: "Co-ord Sets",
     label: "Starting from",
     price: "999",
-    colorcode: "#F4F0D9",
+    colorcode: "#F2E6F3",
   },
   {
     title: "Pants & Shorts",
     label: "Starting from",
     price: "999",
-    colorcode: "#F4F0D9",
+    colorcode: "#F3E8E2",
   },
   {
     title: "Dresses",
     label: "Starting from",
     price: "999",
-    colorcode: "#F4F0D9",
+    colorcode: "#F3F0E2",
   },
 ];
 
@@ -95,7 +95,7 @@ export default function Choices() {
   const [isStart, setIsstart] = useState(true);
   const [isLast, setIsLast] = useState(false);
   return (
-    <div className={`${styles.choices} w-100`}>
+    <div className={`${styles.choices} w-100 zIndex1`}>
       <div className="container">
         <div className={`heading ${styles.heading}`}>
           Our <span>tailoring choices</span>
@@ -103,7 +103,7 @@ export default function Choices() {
         <Swiper
           updateOnWindowResize={true}
           slidesPerView={3}
-          spaceBetween={15}
+          spaceBetween={30}
           onSlideChange={(swiper) => {
             if (swiper.activeIndex === 0) {
               setIsstart(true);
@@ -164,7 +164,7 @@ const List = ({ value }) => {
     <div className={styles.list} style={{ backgroundColor: value.colorcode }}>
       <h5 className={styles.listTitle}>{value.title}</h5>
       <div className={styles.listLabel}>
-        {value.label} <span>Rs: {value.price} %</span>
+        {value.label} <span>Rs: {value.price}/-</span>
       </div>
     </div>
   );

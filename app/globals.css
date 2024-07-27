@@ -3,10 +3,13 @@
   --primary-color: #8C0034;
   --secondary-color: #E8980C;
 
+  --tertiary-color: #ECDBCA;
+
   --white: #fff;
 
   --text-dark: #323A4F;
   --text-primary: #8C0034;
+  --text-light: #F4E7DE;
 
   --bg-light: #F4E7DE;
   --bg-dark:#0F1334;
@@ -94,7 +97,6 @@ body {
 .btn-icon{
   width: 1.5rem;
   height: 1.5rem;
-  margin-right: 0.62rem;
 }
 .btn-light:hover{
   background-color: var(--bg-dark);
@@ -132,15 +134,23 @@ body {
   font-family: EditorsNote-Thin;
   font-size: 3rem;
   color: var(--text-dark);
-  text-align: center;
+  font-style: normal;
   font-weight: 100;
+  line-height: normal;
+  letter-spacing: -0.06rem;
+  text-align: center;
 }
 .heading span {
-  font-family: EditorsNote-Thin;
+  font-family: EditorsNote-Italic;
   color: var(--text-primary);
-  font-weight: 200;
-  letter-spacing: -0.06rem;
   font-style: italic;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: -0.06rem;
+}
+
+.zIndex1{
+  z-index: 1;
 }
 
 
@@ -169,16 +179,16 @@ body {
   height: 20px;
   transform-origin: 50% 50%;
   transform: translate(0, -0.5em) rotate(45deg);
-  box-shadow: inset -0.1em 0.1em 0 0 var(--border-black);
+  box-shadow: inset -0.05em 0.05em 0 0 var(--border-black);
   border-radius: 0 0em 0 0;
 }
 .swiper-next:after {
   top: 16px;
-  width: 0.8em;
-  height: 0.1em;
+  width: 2rem;
+  height: 0.05em;
   background-color: var(--border-black);
   transform: translate(0em, -0.15em);
-  right: 15px;
+  right: 12px;
 }
 
 .swiper-next-disabled:before{
@@ -212,15 +222,16 @@ body {
   height: 20px;
   transform-origin: 50% 50%;
   transform: translate(0, -0.5em) rotate(45deg);
-  box-shadow: inset 0.1em -0.1em 0 0 var(--border-black);
+  box-shadow: inset 0.05em -0.05em 0 0 var(--border-black);
   border-radius: 0 0 0 0;
 }
 .swiper-prev:after {
   top: 16px;
-  width: 0.9em;
-  height: 0.1em;
+  width: 2rem;
+  height: 0.05em;
   transform: translate(0em, -0.15em);
   background-color:var(--border-black);
+  left: -3px;
 }
 
 .swiper-prev-disabled:before{
@@ -247,6 +258,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
 }
 
 
@@ -301,6 +313,20 @@ a{
   letter-spacing: -0.0375rem;
 }
 
+
+.callicon{
+  background-image: url("../assets/icon/callicon-dark.png");
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+}
+
+.btn-light:hover span.callicon{
+  background-image: url("../assets/icon/callicon-light.png");
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+}
 
 
 .view-ondesktop{

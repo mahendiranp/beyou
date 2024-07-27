@@ -61,6 +61,13 @@ padding-bottom: 0.63rem;
 }
 
 
+.btnWidth{
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+
 @media screen and (min-width: 960px) {
     .listBorderStyle.nobackground{
         background-image: none;

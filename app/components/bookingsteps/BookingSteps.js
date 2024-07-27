@@ -24,7 +24,7 @@ const data = [
 
 export default function BookingSteps() {
   return (
-    <section className={`${styles.background} w-100`}>
+    <section className={`${styles.background} w-100 zIndex1`}>
       <div className="container">
         <h3 className={`heading ${styles.heading}`}>
           From concept to closet in <span>four easy steps</span>
@@ -76,9 +76,9 @@ export default function BookingSteps() {
         </div>
       </div>
       <div className={`container w-100 ${styles.booknow}`}>
-        <a className="btn-dark" href="tel:+919019895174">
+        <a className={`${styles.btnWidth} btn-dark`} href="tel:+919019895174">
           <img src={CallIcon.src} className="btn-icon" />
-          Book now
+          <span>Book now</span>
         </a>
       </div>
     </section>

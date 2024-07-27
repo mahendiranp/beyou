@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function Banner() {
   return (
-    <main className={`${styles.banners} w-100`}>
+    <main className={`${styles.banners} w-100 zIndex1`}>
       <div className={`${styles.positionReleative} w-100 h-100`}>
         <div className={styles.darkBg}></div>
         <div

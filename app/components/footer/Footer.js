@@ -4,7 +4,7 @@ import Instagram from "../../../assets/icon/instagram.png";
 
 export default function Footer() {
   return (
-    <div className={`${styles.footer} w-100`}>
+    <div className={`${styles.footer} w-100 zIndex1`}>
       <div className="container">
         <div className={styles.logo}>
           <img src="./beyou-logo.png" className={styles.logo} />

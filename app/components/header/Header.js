@@ -7,7 +7,7 @@ export default function Header() {
   console.log(isMobile);
   return (
     <div className={styles.headerbg}>
-      <div className="container d-flex w-100">
+      <div className="container d-flex w-100 zIndex1">
         <div className={styles.header}>
           <div className={styles.leftSection}>
             <img src="./beyou-logo.png" className={styles.logo} />
@@ -18,11 +18,7 @@ export default function Header() {
               Serviceable in and around <span>HSR & Haralur - Bengaluru</span>
             </p> */}
             <a className="btn-light" href="tel:+919019895174">
-              <img
-                className="btn-icon"
-                src={CallIcon.src}
-                alt="Icon description"
-              />
+              <span className="callicon"></span>
               <span>Book now</span>
             </a>
           </div>

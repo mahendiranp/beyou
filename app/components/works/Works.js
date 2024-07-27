@@ -13,7 +13,7 @@ import Image3 from "../../../assets/photos/IMG_9663.png";
 
 export default function () {
   return (
-    <div className={`${styles.works} w-100`}>
+    <div className={`${styles.works} w-100 zIndex1`}>
       <div className="container">
         <h3 className={`${styles.headingText} heading`}>
           Our <span>notable work</span>

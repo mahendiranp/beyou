@@ -18,16 +18,17 @@
     font-weight: 100;
 }
 .title span{
+    font-family: EditorsNote-Italic;
     font-style: italic;
     color: var(--secondary-color);
     letter-spacing: normal;
+    font-weight: 100;
 }
 
 .message{
     font-family: EditorsNote-Thin;
     font-size: 48px;
     color: var(--secondary-color);
-    font-style: italic;
     font-weight: 100;
     line-height: 54px;
     letter-spacing: -0.96px;
