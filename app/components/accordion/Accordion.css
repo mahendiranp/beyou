@@ -70,4 +70,8 @@
     letter-spacing: -0.025rem;
     margin-bottom: 1.56rem;
   }
+
+  .accordion__section:last-child{
+    margin-bottom: 0px;
+  }
   
