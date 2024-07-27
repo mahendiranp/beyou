@@ -60,15 +60,15 @@
 .rightSection img{
     object-fit: cover;
     color: transparent;
-    transform: scale(1.2);
+    transform: scale(1.3);
     height: 100%;
 }
 
 @media screen and (min-width: 960px) {
 .desktopImageSize{
-    height: 80%;
+    height: 100%;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 30px;
 }
 }
 
@@ -101,7 +101,6 @@
         border-radius: 30px 30px 0 0;
         width: 100%;
         object-position: right;
-        transform: none;
         height: revert-layer;
     }
 
@@ -124,6 +123,7 @@
     .name{
         font-size: 1.5rem;
         font-weight: 200;
+        text-align: center;
         padding-bottom: 1.5rem;
     }
     .name span{
