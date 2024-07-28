@@ -338,6 +338,17 @@ a{
 
 
 
+.logoAnimate .beyouText {
+  animation: spin 20s cubic-bezier(.3, .3, .3, .3) infinite;
+   transform-origin: 50% 50%;
+   transform-box: fill-box;
+ }
+ @keyframes spin{
+  50% { transform: rotate(180deg); }
+  100% { transform: rotate(360deg); }
+ }
+
+
 .callicon{
   background-image: url("../assets/icon/callicon-dark.png");
   width: 20px;
