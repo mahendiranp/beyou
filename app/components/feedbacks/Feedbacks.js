@@ -15,7 +15,7 @@ export default function Feedbacks() {
           </div>
           <div className={styles.quationBeYouLogo}>
             {/* <img src={quationBeYouLogo.src} /> */}
-            <BeYouAnimatedLogo isMobile="true" />
+            <BeYouAnimatedLogo isMobile="false" />
           </div>
           <div className={styles.quationRight}>
             <img src={quationRight.src} />
