@@ -92,7 +92,7 @@
         letter-spacing: normal
     }
     .message{
-        padding: 0px 0 0px 0px;
+        padding: 0px 1.375rem;
         margin: -200px 0px 10px;
         text-align: center;
         border-left: 0px;
@@ -104,9 +104,10 @@
     }
     .rightSection img{
         width: 100%;
-        object-position: 20px 12%;
+        object-position: 20px -14%;
         height: revert-layer;
-        transform: scale(1.35);
+        transform: scale(1.8);
+        height: 400px;
     }
 
     .leftSection{
