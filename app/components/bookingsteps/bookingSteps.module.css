@@ -92,7 +92,7 @@ padding-bottom: 0.63rem;
         align-items: center;
     }
     .heading{
-        font-size: 2.1rem;
+        font-size: 2.125rem;
         letter-spacing: -0.06215rem;
         padding-bottom: 0;
         position: relative;
@@ -113,7 +113,7 @@ padding-bottom: 0.63rem;
         width: 100%;
     }
     .title{
-        font-size: 1.625rem;
+        font-size: 1.75;
         font-family: EditorsNote-Extralight;
         text-align: center;
         font-style: normal;
