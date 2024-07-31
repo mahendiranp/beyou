@@ -43,6 +43,7 @@
   src: url("../assets/fonts/editors-note/EditorsNote-Italic.otf");
 }
 
+
 @font-face {
   font-family: EditorsNote-Thin;
   src: url("../assets/fonts/editors-note/EditorsNote-Thin.otf");
@@ -73,6 +74,10 @@
 @font-face {
   font-family: worksans-thin;
   src: url("../assets/fonts/work-sans/WorkSans-Thin.ttf");
+}
+@font-face {
+  font-family: worksans-medium;
+  src: url("../assets/fonts/work-sans/WorkSans-Medium.ttf");
 }
 
 

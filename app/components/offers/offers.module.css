@@ -69,21 +69,38 @@
 
 @media screen and (max-width: 960px) {
     .offers{
-        padding: 15px 30px 50px 30px;
+        padding: 1.69rem 1rem 4rem;
     }
 .offerDetails{
     flex-flow: column;
 }
 .offerValue{
     display: flex;
-    gap:20px
+    gap:20px;
+    padding: 0.5rem 0 1rem 0;
 }
 .offerValue1{
     font-size: 48px;
     text-align:right
 }
 .offerValue .desc{
-    font-size: 13px;
-    padding-top: 20px;
+    font-family: worksans-medium;
+    padding-top: 16px;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1rem; /* 114.286% */
+    letter-spacing: 0.0875rem;
+    text-transform: uppercase;
+}
+.offerDesc{
+    font-family: worksans-medium;
+    color: var(--secondary-color);
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.0525rem;
+    text-transform: uppercase;
 }
 }
