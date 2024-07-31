@@ -52,141 +52,9 @@ export default function FeedbackSlider() {
         <div className={styles.swiperList}>
           <div className={styles.rating}>
             <Rating
-              size={16}
-              initialValue={4}
-              disabled={true}
-              fillColor="#E8980C"
-            />
-          </div>
-          <p className={styles.feedback}>
-            My experience with Pooja has been excellent! She was absolutely
-            outstanding in helping me select the perfect dress for my daughter’s
-            birthday. Stitching is perfect will definitely recommend her to
-            everyone 😊.{" "}
-          </p>
-          <div className={styles.authorDetails}>
-            <p className={styles.name}>Name</p>
-            <p className={styles.city}>City</p>
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className={styles.swiperList}>
-          <div className={styles.rating}>
-            <Rating
-              size={16}
-              initialValue="5"
-              disabled={true}
-              fillColor="#E8980C"
-            />
-          </div>
-          <p className={styles.feedback}>
-            My experience with Pooja has been excellent! She was absolutely
-            outstanding in helping me select the perfect dress for my daughter’s
-            birthday. Stitching is perfect will definitely recommend her to
-            everyone 😊.{" "}
-          </p>
-          <div className={styles.authorDetails}>
-            <p className={styles.name}>Name</p>
-            <p className={styles.city}>City</p>
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className={styles.swiperList}>
-          <div className={styles.rating}>
-            <Rating
-              size={16}
-              initialValue="5"
-              disabled={true}
-              fillColor="#E8980C"
-            />
-          </div>
-          <p className={styles.feedback}>
-            My experience with Pooja has been excellent! She was absolutely
-            outstanding in helping me select the perfect dress for my daughter’s
-            birthday. Stitching is perfect will definitely recommend her to
-            everyone 😊.{" "}
-          </p>
-          <div className={styles.authorDetails}>
-            <p className={styles.name}>Name</p>
-            <p className={styles.city}>City</p>
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className={styles.swiperList}>
-          <div className={styles.rating}>
-            <Rating
-              size={16}
-              initialValue={3}
-              disabled={true}
-              fillColor="#E8980C"
-            />
-          </div>
-          <p className={styles.feedback}>
-            My experience with Pooja has been excellent! She was absolutely
-            outstanding in helping me select the perfect dress for my daughter’s
-            birthday. Stitching is perfect will definitely recommend her to
-            everyone 😊.{" "}
-          </p>
-          <div className={styles.authorDetails}>
-            <p className={styles.name}>Name</p>
-            <p className={styles.city}>City</p>
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className={styles.swiperList}>
-          <div className={styles.rating}>
-            <Rating
-              size={16}
-              initialValue={4}
-              disabled={true}
-              fillColor="#E8980C"
-            />
-          </div>
-          <p className={styles.feedback}>
-            My experience with Pooja has been excellent! She was absolutely
-            outstanding in helping me select the perfect dress for my daughter’s
-            birthday. Stitching is perfect will definitely recommend her to
-            everyone 😊.{" "}
-          </p>
-          <div className={styles.authorDetails}>
-            <p className={styles.name}>Name</p>
-            <p className={styles.city}>City</p>
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className={styles.swiperList}>
-          <div className={styles.rating}>
-            <Rating
-              size={16}
-              initialValue={4}
-              disabled={true}
-              fillColor="#E8980C"
-            />
-          </div>
-          <p className={styles.feedback}>
-            My experience with Pooja has been excellent! She was absolutely
-            outstanding in helping me select the perfect dress for my daughter’s
-            birthday. Stitching is perfect will definitely recommend her to
-            everyone 😊.{" "}
-          </p>
-          <div className={styles.authorDetails}>
-            <p className={styles.name}>Name</p>
-            <p className={styles.city}>City</p>
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className={styles.swiperList}>
-          <div className={styles.rating}>
-            <Rating
-              size={16}
+              size={18}
               initialValue={5}
-              disabled={true}
+              readonly={true}
               fillColor="#E8980C"
             />
           </div>
@@ -206,9 +74,31 @@ export default function FeedbackSlider() {
         <div className={styles.swiperList}>
           <div className={styles.rating}>
             <Rating
-              size={16}
+              size={18}
+              initialValue={4}
+              readonly={true}
+              fillColor="#E8980C"
+            />
+          </div>
+          <p className={styles.feedback}>
+            My experience with Pooja has been excellent! She was absolutely
+            outstanding in helping me select the perfect dress for my daughter’s
+            birthday. Stitching is perfect will definitely recommend her to
+            everyone 😊.{" "}
+          </p>
+          <div className={styles.authorDetails}>
+            <p className={styles.name}>Name</p>
+            <p className={styles.city}>City</p>
+          </div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className={styles.swiperList}>
+          <div className={styles.rating}>
+            <Rating
+              size={18}
               initialValue={5}
-              disabled={true}
+              readonly={true}
               fillColor="#E8980C"
             />
           </div>
@@ -228,9 +118,119 @@ export default function FeedbackSlider() {
         <div className={styles.swiperList}>
           <div className={styles.rating}>
             <Rating
-              size={16}
+              size={18}
+              initialValue={5}
+              readonly={true}
+              fillColor="#E8980C"
+            />
+          </div>
+          <p className={styles.feedback}>
+            My experience with Pooja has been excellent! She was absolutely
+            outstanding in helping me select the perfect dress for my daughter’s
+            birthday. Stitching is perfect will definitely recommend her to
+            everyone 😊.{" "}
+          </p>
+          <div className={styles.authorDetails}>
+            <p className={styles.name}>Name</p>
+            <p className={styles.city}>City</p>
+          </div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className={styles.swiperList}>
+          <div className={styles.rating}>
+            <Rating
+              size={18}
+              initialValue={4}
+              readonly={true}
+              fillColor="#E8980C"
+            />
+          </div>
+          <p className={styles.feedback}>
+            My experience with Pooja has been excellent! She was absolutely
+            outstanding in helping me select the perfect dress for my daughter’s
+            birthday. Stitching is perfect will definitely recommend her to
+            everyone 😊.{" "}
+          </p>
+          <div className={styles.authorDetails}>
+            <p className={styles.name}>Name</p>
+            <p className={styles.city}>City</p>
+          </div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className={styles.swiperList}>
+          <div className={styles.rating}>
+            <Rating
+              size={18}
               initialValue={3}
-              disabled={true}
+              readonly={true}
+              fillColor="#E8980C"
+            />
+          </div>
+          <p className={styles.feedback}>
+            My experience with Pooja has been excellent! She was absolutely
+            outstanding in helping me select the perfect dress for my daughter’s
+            birthday. Stitching is perfect will definitely recommend her to
+            everyone 😊.{" "}
+          </p>
+          <div className={styles.authorDetails}>
+            <p className={styles.name}>Name</p>
+            <p className={styles.city}>City</p>
+          </div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className={styles.swiperList}>
+          <div className={styles.rating}>
+            <Rating
+              size={18}
+              initialValue={4}
+              readonly={true}
+              fillColor="#E8980C"
+            />
+          </div>
+          <p className={styles.feedback}>
+            My experience with Pooja has been excellent! She was absolutely
+            outstanding in helping me select the perfect dress for my daughter’s
+            birthday. Stitching is perfect will definitely recommend her to
+            everyone 😊.{" "}
+          </p>
+          <div className={styles.authorDetails}>
+            <p className={styles.name}>Name</p>
+            <p className={styles.city}>City</p>
+          </div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className={styles.swiperList}>
+          <div className={styles.rating}>
+            <Rating
+              size={18}
+              initialValue={5}
+              readonly={true}
+              fillColor="#E8980C"
+            />
+          </div>
+          <p className={styles.feedback}>
+            My experience with Pooja has been excellent! She was absolutely
+            outstanding in helping me select the perfect dress for my daughter’s
+            birthday. Stitching is perfect will definitely recommend her to
+            everyone 😊.{" "}
+          </p>
+          <div className={styles.authorDetails}>
+            <p className={styles.name}>Name</p>
+            <p className={styles.city}>City</p>
+          </div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className={styles.swiperList}>
+          <div className={styles.rating}>
+            <Rating
+              size={18}
+              initialValue={5}
+              readonly={true}
               fillColor="#E8980C"
             />
           </div>
