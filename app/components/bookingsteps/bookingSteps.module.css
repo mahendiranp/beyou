@@ -130,4 +130,7 @@ padding-bottom: 0.63rem;
         background-size: 32px auto;
         margin-bottom: 1rem;
     }
+    .btnWidth{
+        height: 56px;
+    }
 }
