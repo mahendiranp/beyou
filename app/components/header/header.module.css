@@ -16,15 +16,19 @@
     width: 110px;
     height: 52px;
 }
-.leftSection, .rightSection{
+
+.leftSection{
+    flex-flow: column;
+}
+ .rightSection{
     display: flex;
 }
 .leftSection .text{
     font-family: EditorsNote-Regular;
     align-content: center;
     font-weight: 400;
-    padding: 0px 10px;
-    font-size: 0.8125rem;
+    padding: 0px 0px;
+    font-size: 0.9125rem;
     line-height: 1.375rem; /* 169.231% */
 }
 .rightSection .text{
