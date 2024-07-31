@@ -29,7 +29,8 @@
     font-weight: 400;
     padding: 0px 0px;
     font-size: 0.9125rem;
-    line-height: 1.375rem; /* 169.231% */
+    line-height: 1rem; /* 169.231% */
+    color: var(--text-black);
 }
 .rightSection .text{
     font-weight: 400;
