@@ -54,6 +54,11 @@
 }
 
 @font-face {
+  font-family: EditorsNote-Extralight;
+  src: url("../assets/fonts/editors-note/EditorsNote-Extralight.otf");
+}
+
+@font-face {
   font-family: worksans-regular;
   src: url("../assets/fonts/work-sans/WorkSans-Regular.ttf");
 }
