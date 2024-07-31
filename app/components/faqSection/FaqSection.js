@@ -55,7 +55,7 @@ export default function FaqSection() {
       <div className={`${styles.faqContainer} container`}>
         <div className={styles.leftSection}>
           <h3 className={styles.faqTitles}>
-            Got questions? <span>We've Got Answers!</span>
+            Got questions? <span>We've got answers!</span>
           </h3>
         </div>
         <div className={styles.rightSection}>

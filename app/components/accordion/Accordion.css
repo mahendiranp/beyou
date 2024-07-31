@@ -27,9 +27,9 @@
   .accordion__title {
     font-family: worksans-regular;
     color: var(--text-dark);
-    font-size: 1.375rem;
+    font-size: 1.125rem;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
     letter-spacing: -0.0275rem;
     padding-bottom: 0.68rem;
@@ -63,9 +63,8 @@
     font-family: worksans-regular;
     color: var(--text-dark);
     padding: 0 10px 0rem 0;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-style: normal;
-    font-weight: 400;
     line-height: 1.5rem; /* 120% */
     letter-spacing: -0.025rem;
     margin-bottom: 1.56rem;
