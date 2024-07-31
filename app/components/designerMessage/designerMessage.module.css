@@ -78,7 +78,7 @@
     }
     .messageSection {
         display: flex;
-        gap: 40px;
+        gap: 2rem;
         flex-flow: column-reverse;
         margin-bottom: 80px;
     }
@@ -100,11 +100,13 @@
         bottom: 0px;
         z-index: 1;
         font-size: 2.2rem;
+        line-height: 2.375rem;
     }
     .rightSection img{
         width: 100%;
         object-position: 20px 12%;
         height: revert-layer;
+        transform: scale(1.35);
     }
 
     .leftSection{
@@ -123,13 +125,13 @@
         position: absolute;
         bottom: 0px;
         z-index: 1;
-        height: 400px;
+        height: 200px;
     }
     .name{
         font-size: 1.5rem;
         font-weight: 200;
         text-align: center;
-        padding-bottom: 1.5rem;
+        padding-bottom: 1rem;
     }
     .name span{
         font-weight: 300;
