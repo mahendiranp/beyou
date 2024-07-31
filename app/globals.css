@@ -430,7 +430,7 @@ display: none;
     font-weight: 200;
   }
   .galleryImg figcaption{
-    padding: 5px 0px;
+    padding: 8px 0px 0;
     font-size: 0.87rem;
   }
   .header-btn{
