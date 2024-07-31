@@ -417,11 +417,12 @@ display: none;
 
   .heading{
     font-family: EditorsNote-Thin;
-    font-size: 2rem;
+    font-size: 2.125rem;
     color: var(--text-dark);
     text-align: center;
-    font-weight: 300;
+    font-weight: 100;
     line-height: 2.375rem;
+    letter-spacing: -.06215rem;
   }
   .heading span {
     font-family: EditorsNote-ThinItalic;
