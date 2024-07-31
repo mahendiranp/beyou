@@ -1,5 +1,5 @@
 import styles from "./footer.module.css";
-import YouTube from "../../../assets/icon/youtube.png";
+import Pinterest from "../../../assets/icon/pinterest.png";
 import Instagram from "../../../assets/icon/instagram.png";
 
 export default function Footer() {
@@ -34,7 +34,7 @@ export default function Footer() {
             <div className={styles.socialMedias}>
               <div className={styles.socialMediaIcons}>
                 <a href="#">
-                  <img src={YouTube.src} />
+                  <img src={Pinterest.src} />
                 </a>
               </div>
               <div className={styles.socialMediaIcons}>

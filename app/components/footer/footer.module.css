@@ -54,7 +54,7 @@
     height: 62px;
 }
 .socialMediaIcons{
-    padding: 0 1rem;
+    padding: 0 0.8rem;
 }
 
 .socialMediaIcons a{
@@ -110,20 +110,26 @@
     font-family: worksans-regular;
     text-align: center;
     padding-top: 15px;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.125rem; /* 128.571% */
+    letter-spacing: -0.035rem;
 }
 
 @media screen and (max-width: 960px) {
     .footer{
-        padding: 2.31rem 1rem 3rem;
+        padding: 2.31rem 1rem 2rem;
     }
 .info{
     font-size: 48px;
     letter-spacing: -5px;
-    margin-top: 0.68rem;
+    margin-top: 0;
 }
 .info span{
     margin-top: -24px;
     font-size: 64px;
+    letter-spacing: -0.28rem;
 }
 .logo img{
     width: 90px;
