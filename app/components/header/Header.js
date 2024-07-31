@@ -19,7 +19,7 @@ export default function Header() {
             </p> */}
             <a className="btn-light" href="tel:+919019895174">
               <span className="callicon"></span>
-              <span>Book now</span>
+              <span className="header-btn">Book now</span>
             </a>
           </div>
         </div>

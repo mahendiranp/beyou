@@ -338,6 +338,10 @@ a{
 }
 
 
+.header-btn{
+  letter-spacing: -0.04rem;
+}
+
 
 .logoAnimate .beyouText {
   animation: spin 20s cubic-bezier(.3, .3, .3, .3) infinite;
