@@ -92,9 +92,9 @@ padding-bottom: 0.63rem;
         align-items: center;
     }
     .heading{
-        font-size: 2rem;
+        font-size: 2.1rem;
         letter-spacing: -0.06215rem;
-        padding-bottom: 0.63rem;
+        padding-bottom: 0;
         position: relative;
         font-weight: 100;
     }
