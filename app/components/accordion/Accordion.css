@@ -3,13 +3,12 @@
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid var(--border-dark);
-    margin-bottom: 2rem;
   }
   
   /* Style the buttons that are used to open and close the accordion panel */
   .accordion {
     cursor: pointer;
-    padding-bottom: 18px 0;
+    padding: 18px 0;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -32,7 +31,6 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: -0.0275rem;
-    padding-bottom: 0.68rem;
   }
   
   /* Style the accordion chevron icon */
@@ -72,5 +70,6 @@
 
   .accordion__section:last-child{
     margin-bottom: 0px;
+    border: 0px;
   }
   
