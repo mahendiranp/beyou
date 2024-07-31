@@ -24,7 +24,7 @@
     font-size: 2rem;
     position: relative;
     flex-grow: 1;
-    letter-spacing: -0.04rem;
+    letter-spacing: -0.02rem;
 }
 
 .content{
@@ -114,7 +114,11 @@ padding-bottom: 0.63rem;
     }
     .title{
         font-size: 1.625rem;
+        font-family: EditorsNote-Thin;
         text-align: center;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
         letter-spacing: -0.01625rem;
     }
     .listBorderStyle{
