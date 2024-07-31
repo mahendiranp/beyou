@@ -16,7 +16,7 @@ export default function Offers() {
           <div className={styles.offerDesc}>
             <span className={`${styles.desc1} view-ondesktop`}>
               on your first order!
-            </span>{" "}
+            </span>
             <span className={styles.desc2}>Offer valid until August end</span>
           </div>
         </div>

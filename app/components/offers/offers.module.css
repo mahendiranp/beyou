@@ -58,10 +58,11 @@
     color: var(--text-light);
     font-size: 0.875rem;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
     letter-spacing: 0.035rem;
     text-transform: uppercase;
+    padding-top: 0.25rem;
 }
 
 @media screen and (max-width: 960px) {
