@@ -338,10 +338,6 @@ a{
 }
 
 
-.header-btn{
-  letter-spacing: -0.04rem;
-}
-
 
 .logoAnimate .beyouText {
   animation: spin 20s cubic-bezier(.3, .3, .3, .3) infinite;
@@ -396,6 +392,10 @@ display: none;
   display: inline-block;
 }
 
+.header-btn{
+  letter-spacing: normal;
+}
+
 
 @media screen and (max-width: 960px) {
   .view-ondesktop{
@@ -422,4 +422,7 @@ display: none;
     padding: 5px 0px;
     font-size: 0.87rem;
   }
+  .header-btn{
+    letter-spacing: -0.04rem;
+  }  
 }
