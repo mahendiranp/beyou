@@ -80,6 +80,11 @@
   src: url("../assets/fonts/work-sans/WorkSans-Medium.ttf");
 }
 
+@font-face {
+  font-family: worksans-semiBold;
+  src: url("../assets/fonts/work-sans/WorkSans-SemiBold.ttf");
+}
+
 
 
 

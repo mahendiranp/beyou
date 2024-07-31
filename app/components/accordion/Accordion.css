@@ -25,7 +25,7 @@
   
   /* Style the accordion content title */
   .accordion__title {
-    font-family: worksans-regular;
+    font-family: worksans-medium;
     color: var(--text-dark);
     font-size: 1.125rem;
     font-style: normal;
