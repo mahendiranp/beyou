@@ -84,7 +84,7 @@ padding-bottom: 0.63rem;
         padding: 2rem 1rem;
         display: flex;
         flex-flow: column;
-        gap: 2rem;
+        gap: 1rem;
     }
     .list{
         display: flex;
@@ -113,7 +113,7 @@ padding-bottom: 0.63rem;
         width: 100%;
     }
     .title{
-        font-size: 1.75rem;
+        font-size: 1.875rem;
         font-family: EditorsNote-Extralight;
         text-align: center;
         font-style: normal;
@@ -128,6 +128,6 @@ padding-bottom: 0.63rem;
         height: 60px;
         background-position: center center;
         background-size: 32px auto;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
     }
 }
