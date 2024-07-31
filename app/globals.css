@@ -439,4 +439,7 @@ display: none;
   .navigationlink{
     margin-top: 2.5rem;
   }
+  .logoAnimate{
+    width: 173px;
+  }
 }

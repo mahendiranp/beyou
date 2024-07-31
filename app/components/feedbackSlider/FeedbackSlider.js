@@ -51,7 +51,12 @@ export default function FeedbackSlider() {
       <SwiperSlide>
         <div className={styles.swiperList}>
           <div className={styles.rating}>
-            <Rating size={16} initialValue={4} disabled={true} />
+            <Rating
+              size={16}
+              initialValue={4}
+              disabled={true}
+              fillColor="#E8980C"
+            />
           </div>
           <p className={styles.feedback}>
             My experience with Pooja has been excellent! She was absolutely
@@ -68,7 +73,12 @@ export default function FeedbackSlider() {
       <SwiperSlide>
         <div className={styles.swiperList}>
           <div className={styles.rating}>
-            <Rating size={16} initialValue="5" disabled={true} />
+            <Rating
+              size={16}
+              initialValue="5"
+              disabled={true}
+              fillColor="#E8980C"
+            />
           </div>
           <p className={styles.feedback}>
             My experience with Pooja has been excellent! She was absolutely
@@ -85,7 +95,12 @@ export default function FeedbackSlider() {
       <SwiperSlide>
         <div className={styles.swiperList}>
           <div className={styles.rating}>
-            <Rating size={16} initialValue="5" disabled={true} />
+            <Rating
+              size={16}
+              initialValue="5"
+              disabled={true}
+              fillColor="#E8980C"
+            />
           </div>
           <p className={styles.feedback}>
             My experience with Pooja has been excellent! She was absolutely
@@ -102,7 +117,12 @@ export default function FeedbackSlider() {
       <SwiperSlide>
         <div className={styles.swiperList}>
           <div className={styles.rating}>
-            <Rating size={16} initialValue={3} disabled={true} />
+            <Rating
+              size={16}
+              initialValue={3}
+              disabled={true}
+              fillColor="#E8980C"
+            />
           </div>
           <p className={styles.feedback}>
             My experience with Pooja has been excellent! She was absolutely
@@ -119,7 +139,12 @@ export default function FeedbackSlider() {
       <SwiperSlide>
         <div className={styles.swiperList}>
           <div className={styles.rating}>
-            <Rating size={16} initialValue={4} disabled={true} />
+            <Rating
+              size={16}
+              initialValue={4}
+              disabled={true}
+              fillColor="#E8980C"
+            />
           </div>
           <p className={styles.feedback}>
             My experience with Pooja has been excellent! She was absolutely
@@ -136,7 +161,12 @@ export default function FeedbackSlider() {
       <SwiperSlide>
         <div className={styles.swiperList}>
           <div className={styles.rating}>
-            <Rating size={16} initialValue={4} disabled={true} />
+            <Rating
+              size={16}
+              initialValue={4}
+              disabled={true}
+              fillColor="#E8980C"
+            />
           </div>
           <p className={styles.feedback}>
             My experience with Pooja has been excellent! She was absolutely
@@ -153,7 +183,12 @@ export default function FeedbackSlider() {
       <SwiperSlide>
         <div className={styles.swiperList}>
           <div className={styles.rating}>
-            <Rating size={16} initialValue={5} disabled={true} />
+            <Rating
+              size={16}
+              initialValue={5}
+              disabled={true}
+              fillColor="#E8980C"
+            />
           </div>
           <p className={styles.feedback}>
             My experience with Pooja has been excellent! She was absolutely
@@ -170,7 +205,12 @@ export default function FeedbackSlider() {
       <SwiperSlide>
         <div className={styles.swiperList}>
           <div className={styles.rating}>
-            <Rating size={16} initialValue={5} disabled={true} />
+            <Rating
+              size={16}
+              initialValue={5}
+              disabled={true}
+              fillColor="#E8980C"
+            />
           </div>
           <p className={styles.feedback}>
             My experience with Pooja has been excellent! She was absolutely
@@ -187,7 +227,12 @@ export default function FeedbackSlider() {
       <SwiperSlide>
         <div className={styles.swiperList}>
           <div className={styles.rating}>
-            <Rating size={16} initialValue={3} disabled={true} />
+            <Rating
+              size={16}
+              initialValue={3}
+              disabled={true}
+              fillColor="#E8980C"
+            />
           </div>
           <p className={styles.feedback}>
             My experience with Pooja has been excellent! She was absolutely

@@ -26,9 +26,13 @@
 
 
 @media screen and (max-width: 960px) {
+    .feedbacks{
+     padding: 60px 20px 80px;   
+    }
     .quationLeft img, .quationRight img{
         width: 58px;
         height: 44px;
+        object-fit: contain;
     }
     .quationBeYouLogo{
         margin: 0px 15px;
