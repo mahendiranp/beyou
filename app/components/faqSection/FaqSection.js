@@ -60,14 +60,18 @@ export default function FaqSection() {
         </div>
         <div className={styles.rightSection}>
           <div className={styles.questions}>
-            {faqData.map((value) => {
+            {faqData.map((value, index) => {
               return (
                 //<Accordion title="First Accordion" content="First Accordion content" />
                 // <div className={styles.question}>
                 //   <h3>{value.question}</h3>
                 //   <p>{value.answer}</p>
                 // </div>
-                <Accordion title={value.question} content={value.answer} />
+                <Accordion
+                  title={value.question}
+                  content={value.answer}
+                  key={index}
+                />
               );
             })}
           </div>
