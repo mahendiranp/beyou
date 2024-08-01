@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import Scrollbar from "smooth-scrollbar";
 
 const option = {
-  dumping: 0.1,
+  dumping: 0.5,
   thumbMinSize: 1,
   renderByPixels: true,
   alwaysShowTracks: true,
