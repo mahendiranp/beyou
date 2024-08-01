@@ -33,12 +33,15 @@ export default function Footer() {
             </div>
             <div className={styles.socialMedias}>
               <div className={styles.socialMediaIcons}>
-                <a href="#">
+                <a href="https://pin.it/76JZ9D5Gf" target="_blank">
                   <img src={Pinterest.src} />
                 </a>
               </div>
               <div className={styles.socialMediaIcons}>
-                <a href="#">
+                <a
+                  href="https://www.instagram.com/beyou_customfashion?igsh=MXI2M3hyc2Y5cXR1eA%3D%3D&utm_source=qr"
+                  target="_blank"
+                >
                   <img src={Instagram.src} />
                 </a>
               </div>
