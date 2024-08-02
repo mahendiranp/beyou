@@ -427,7 +427,7 @@ display: none;
   z-index: 10;
   /* bottom: 5rem; */
   right: 5rem;
-  bottom: calc(100vh - 86vh);
+  bottom: calc(100vh - 97vh);
 
 }
 
