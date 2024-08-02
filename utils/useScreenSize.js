@@ -1,17 +1,18 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import React, { useState, useEffect, useLayoutEffect } from "react";
 import { isDesktop } from "react-device-detect";
 
 const defaultSceeen = 960;
 
 const useScreenSize = () => {
   const [screenSize, setScreenSize] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
+    width: null,
+    height: null,
   });
 
   useEffect(() => {
+    console.log("rrrrr");
     const handleResize = () => {
       setScreenSize({
         width: window.innerWidth,
@@ -25,6 +26,14 @@ const useScreenSize = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
+  }, []);
+
+  useLayoutEffect(() => {
+    console.log(window);
+    setScreenSize({
+      width: window.innerWidth,
+      height: window.innerHeight,
+    });
   }, []);
 
   return {
