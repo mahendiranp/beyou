@@ -7,8 +7,8 @@ const defaultSceeen = 960;
 
 const useScreenSize = () => {
   const [screenSize, setScreenSize] = useState({
-    width: null,
-    height: null,
+    width: window.innerWidth,
+    height: window.innerHeight,
   });
 
   useEffect(() => {
