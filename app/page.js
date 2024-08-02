@@ -1,3 +1,4 @@
+"use client";
 import styles from "./page.module.css";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
@@ -10,21 +11,45 @@ import DesignerMessage from "./components/designerMessage/DesignerMessage";
 import Works from "./components/works/Works";
 import Offers from "./components/offers/Offers";
 import Scroll from "../utils/Scroll";
+import WhatAppIcon from "../assets/icon/whatsapp-icon.png";
+import StickyBox from "react-sticky-box";
+
 export default function Home() {
+  const handleOnScroll = (id) => {
+    debugger;
+    const header = document.getElementById("header");
+    const element = document.getElementById(id);
+    window.scrollTo({
+      top: element.offsetTop - header.offsetHeight,
+      behavior: "smooth",
+    });
+  };
   return (
     <main className={styles.main}>
-      <Scroll>
-        <Header />
-        <Banner />
-        <Offers />
-        <BookingSteps />
-        <Choices />
-        <DesignerMessage />
-        <Works />
-        <Feedbacks />
-        <FaqSection />
-        <Footer />
-      </Scroll>
+      <Header onClick={handleOnScroll} />
+      <Banner />
+      <Offers />
+      <BookingSteps id="booking-steps" />
+      <Choices id="choices" />
+      <DesignerMessage id="designer-message" />
+      <Works id="works" />
+      <Feedbacks id="customer-feedbacks" />
+      <FaqSection />
+      <Footer />
+      <WhatsappIcon />
     </main>
   );
 }
+
+const WhatsappIcon = () => {
+  return (
+    <div className="floating-icon">
+      <a
+        href="https://api.whatsapp.com/send?phone=+919019895174"
+        target="blank"
+      >
+        <img src={WhatAppIcon.src} />
+      </a>
+    </div>
+  );
+};

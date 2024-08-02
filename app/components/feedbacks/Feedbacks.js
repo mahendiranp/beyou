@@ -5,9 +5,9 @@ import quationBeYouLogo from "../../../assets/images/beyou-circle.png";
 import FeedbackSlider from "../feedbackSlider/FeedbackSlider";
 import BeYouLogo from "../../../assets/images/beyou-logo.png";
 
-export default function Feedbacks() {
+export default function Feedbacks(props) {
   return (
-    <div className={`${styles.feedbacks}  w-100 zIndex1`}>
+    <div className={`${styles.feedbacks}  w-100 zIndex1`} {...props}>
       <div className="container">
         <div className={styles.feedbackTitle}>
           <div className={styles.quationLeft}>

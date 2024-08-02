@@ -100,6 +100,9 @@ body {
   overflow-x: hidden;
   font-family: EditorsNote-Regular, Times, serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 body{
   height: 100vh;
@@ -419,6 +422,26 @@ display: none;
   margin: 0px 3px;
 }
 
+.floating-icon{
+  position: fixed;
+  z-index: 10;
+  /* bottom: 5rem; */
+  right: 5rem;
+  bottom: calc(100vh - 86vh);
+
+}
+
+.floating-icon a{
+  display: inline-block;
+}
+
+
+.floating-icon img{
+  object-fit: contain;
+  width: 3rem;
+  height: 3rem;
+}
+
 @media screen and (max-width: 960px) {
   .view-ondesktop{
       display: none;
@@ -454,4 +477,153 @@ display: none;
   .logoAnimate{
     width: 173px;
   }
+  .floating-icon{
+    position: fixed;
+    z-index: 10;
+    right: 3rem;
+  }
+}
+
+
+
+
+#page-wrap {
+  text-align: center;
+  overflow: auto;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #d1d1d1;
+  transition: color 0.2s;
+}
+
+/* Change color on hover */
+.bm-item:hover {
+  color: white;
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 16px;
+  top: 0px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #BB9F8F;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  background: rgba(245, 231, 222, 1);
+  backdrop-filter: blur(2px);
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  top:0
+}
+
+.mobile-menu__logo{
+  background-color: #F5E7DE;
+  display: flex;
+  flex-flow: column;
+  padding: 3rem 0;
+  border-bottom: 1px solid #BB9F8F;
+  align-items: center;
+}
+
+.mobile-menu__logo p{
+  color: var(--text-black);
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem; 
+}
+
+.mobile-menu__links{
+  opacity: 0.9;
+  padding: 0 2.8rem;
+}
+
+.menu-item{
+  color: #8C0034;
+  text-align: center;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 4.875rem;
+  display: block;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid #BB9F8F;
+  width: 100%;
+  cursor: pointer;
+  font-family: EditorsNote-Regular;
+}
+
+
+@media screen and (max-width: 960px) {
+  .hamburger-menu{
+    position: relative;
+  }
+}
+
+.hamburger-menu{
+  width: 19px;
+  height: 13px;
+}
+
+.social-medias{
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.social-media-icons{
+  padding: 0 0.8rem;
+}
+
+.social-media-icons a{
+  display: inline-block;
+}
+
+.social-media-icons img{
+  width: 40px;
+  height: 40px;
 }

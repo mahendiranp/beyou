@@ -13,6 +13,10 @@ export default function Offers() {
               first order!
             </span>
           </div>
+          {/* <a href="https://api.whatsapp.com/send?phone=50600000000">
+            Click to connect +506 0000 0000
+          </a> */}
+
           <div className={styles.offerDesc}>
             <span className={`${styles.desc1} view-ondesktop`}>
               on your first order!

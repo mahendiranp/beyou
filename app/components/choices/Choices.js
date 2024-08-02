@@ -91,11 +91,11 @@ const choices = [
   },
 ];
 
-export default function Choices() {
+export default function Choices(props) {
   const [isStart, setIsstart] = useState(true);
   const [isLast, setIsLast] = useState(false);
   return (
-    <div className={`${styles.choices} w-100 zIndex1`}>
+    <section className={`${styles.choices} w-100 zIndex1`} {...props}>
       <div className="container">
         <div className={`heading ${styles.heading}`}>
           Our <span>tailoring choices</span>
@@ -155,7 +155,7 @@ export default function Choices() {
           </div>
         </Swiper>
       </div>
-    </div>
+    </section>
   );
 }
 

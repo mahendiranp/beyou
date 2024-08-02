@@ -2,9 +2,9 @@ import styles from "./designerMessage.module.css";
 import Image from "next/image";
 import DesignerImage from "../../../assets/photos/designer-photo.jpeg";
 
-export default function () {
+export default function (props) {
   return (
-    <div className={`${styles.designerMessage} w-100 zIndex1`}>
+    <section className={`${styles.designerMessage} w-100 zIndex1`} {...props}>
       <div className="container">
         <h3 className={`${styles.title} view-onmobile`}>
           Meet the <span>designer</span>
@@ -61,6 +61,6 @@ export default function () {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

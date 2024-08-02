@@ -11,9 +11,9 @@ import Image8 from "../../../assets/photos/IMG_4686.png";
 import Image4 from "../../../assets/photos/IMG_6848.png";
 import Image3 from "../../../assets/photos/IMG_9663.png";
 
-export default function () {
+export default function (props) {
   return (
-    <div className={`${styles.works} w-100 zIndex1`}>
+    <section className={`${styles.works} w-100 zIndex1`} {...props}>
       <div className="container">
         <h3 className={`${styles.headingText} heading`}>
           Our <span>notable work</span>
@@ -113,6 +113,6 @@ export default function () {
           </figure>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
