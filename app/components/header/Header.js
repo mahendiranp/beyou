@@ -32,11 +32,11 @@ export default function Header({ onClick }) {
             <Menu
               width={"100%"}
               customBurgerIcon={<img src={MenuIcon.src} />}
-              customCrossIcon={false}
               className={"my-menu view-onmobile"}
               burgerButtonClassName={"hamburger-menu"}
               reveal
               isOpen={isOpen}
+              onClose={() => setIsOpen(!isOpen)}
               onOpen={() => setIsOpen(!isOpen)}
             >
               <div className="mobile-menu">
