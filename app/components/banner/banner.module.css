@@ -27,7 +27,7 @@
 
 .bannerDesktopView img{
     width: 33.3%;
-    object-position: center;
+    object-position: top center;
     object-fit: cover;
 }
 
