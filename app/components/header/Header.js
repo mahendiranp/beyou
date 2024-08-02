@@ -16,13 +16,13 @@ export default function Header({ onClick }) {
   const ref = createRef();
 
   var isMenuOpen = function (id) {
-    // const section = document.querySelector(`#${id}`);
-    // section.scrollIntoView({
-    //   behavior: "smooth",
-    //   inline: "start",
-    // });
+    const section = document.querySelector(`#${id}`);
+    section.scrollIntoView({
+      behavior: "smooth",
+      inline: "start",
+    });
     setIsOpen(!isOpen);
-    onClick(id);
+    //onClick(id);
   };
   return (
     <div className={styles.headerbg} id="header">

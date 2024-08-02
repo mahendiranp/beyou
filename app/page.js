@@ -15,15 +15,7 @@ import WhatAppIcon from "../assets/icon/whatsapp-icon.png";
 import StickyBox from "react-sticky-box";
 
 export default function Home() {
-  const handleOnScroll = (id) => {
-    debugger;
-    const header = document.getElementById("header");
-    const element = document.getElementById(id);
-    window.scrollTo({
-      top: element.offsetTop - header.offsetHeight,
-      behavior: "smooth",
-    });
-  };
+  const handleOnScroll = (id) => {};
   return (
     <main className={styles.main}>
       <Header onClick={handleOnScroll} />
