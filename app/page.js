@@ -15,10 +15,12 @@ import WhatAppIcon from "../assets/icon/whatsapp-icon.png";
 import StickyBox from "react-sticky-box";
 
 export default function Home() {
-  const handleOnScroll = (id) => {};
+  const handleOnScroll = () => {};
   return (
     <main className={styles.main}>
       <Header onClick={handleOnScroll} />
+
+      <button onClick={handleOnScroll}>Click</button>
       <Banner />
       <Offers />
       <BookingSteps id="booking-steps" />
@@ -36,10 +38,7 @@ export default function Home() {
 const WhatsappIcon = () => {
   return (
     <div className="floating-icon">
-      <a
-        href="https://api.whatsapp.com/send?phone=+919019895174"
-        target="blank"
-      >
+      <a href="https://wa.me/+919019895174" target="blank">
         <img src={WhatAppIcon.src} />
       </a>
     </div>
