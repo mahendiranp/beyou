@@ -1,5 +1,4 @@
 "use client";
-import { isMobile } from "react-device-detect";
 
 import styles from "./header.module.css";
 import { slide as Menu } from "react-burger-menu";
@@ -8,21 +7,20 @@ import Instagram from "../../../assets/icon/instagram.png";
 import useScreenSize from "@/utils/useScreenSize";
 
 import MenuIcon from "../../../assets/icon/hamburger-menu-icon.png";
-import { useState, createRef } from "react";
+import { useState } from "react";
 
-export default function Header({ onClick }) {
-  const { isMobile, isDesktop } = useScreenSize();
+export default function Header() {
+  const { isMobile } = useScreenSize();
   const [isOpen, setIsOpen] = useState(false);
-  const ref = createRef();
 
   var isMenuOpen = function (id) {
     const section = document.querySelector(`#${id}`);
     section.scrollIntoView({
       behavior: "smooth",
+      block: "start",
       inline: "start",
     });
     setIsOpen(!isOpen);
-    //onClick(id);
   };
   return (
     <div className={styles.headerbg} id="header">

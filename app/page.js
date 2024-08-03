@@ -19,8 +19,6 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Header onClick={handleOnScroll} />
-
-      <button onClick={handleOnScroll}>Click</button>
       <Banner />
       <Offers />
       <BookingSteps id="booking-steps" />
