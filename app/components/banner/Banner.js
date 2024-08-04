@@ -13,7 +13,7 @@ export default function Banner() {
         <div
           className={`${styles.bannerMobileView} w-100  h-100 view-onmobile`}
         >
-          <img src="./banner-mobile.png" className={styles.bannerMobileView} />
+          <img src={Image1.src} className={styles.bannerMobileView} />
         </div>
         <div
           className={`${styles.bannerDesktopView} w-100 h-100 view-ondesktop`}
