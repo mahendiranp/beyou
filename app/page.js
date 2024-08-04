@@ -37,7 +37,7 @@ const WhatsappIcon = () => {
   return (
     <div className="floating-icon">
       <a href="https://wa.me/+919019895174" target="blank">
-        <img src={WhatAppIcon.src} />
+        <img src={WhatAppIcon.src} width={"48"} />
       </a>
     </div>
   );

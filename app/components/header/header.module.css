@@ -75,4 +75,17 @@
         width: 83px;
         height: 39px;
     }
+    .rightSection{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding-right: 1rem;
+    }
+    .rightSection a{
+        padding: 0.5rem 0.75rem;
+    }
+
+    .rightSection .header-btn{
+        padding-left: 0.38rem;
+    }
 }

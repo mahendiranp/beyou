@@ -92,7 +92,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  scroll-padding: 60px;
+  scroll-padding: 90px;
 }
 
 html,
@@ -426,9 +426,8 @@ display: none;
 .floating-icon{
   position: fixed;
   z-index: 10;
-  /* bottom: 5rem; */
-  right: 5rem;
-  bottom: calc(100vh - 97vh);
+  right: 2rem;
+  bottom: calc(100vh - 86vh);
 
 }
 
@@ -481,7 +480,8 @@ display: none;
   .floating-icon{
     position: fixed;
     z-index: 10;
-    right: 3rem;
+    right: 1rem;
+    bottom: 120px;
   }
 }
 
@@ -603,6 +603,10 @@ display: none;
 @media screen and (max-width: 960px) {
   .hamburger-menu{
     position: relative;
+  }
+  .bm-cross-button button{
+    background-color: #323A4F;
+    border-radius: 15px;
   }
 }
 
