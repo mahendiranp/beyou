@@ -92,7 +92,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  scroll-padding: 90px;
+  scroll-padding: 100px;
 }
 
 html,
@@ -319,6 +319,10 @@ body{
   height: 100%;
 }
 
+.p-0{
+  padding: 0 !important;
+}
+
 a{
   text-decoration: none;
   color: inherit;
@@ -360,7 +364,19 @@ a{
     width: 100%;
 }
 
+.sticky{
+  border-radius: 0;
+  padding: 0px;
+  z-index: 11;
+  height: 3rem;
+}
 
+.sticky .offerName{
+  font-size: 1.2rem;   
+}
+.stickOfferValue{
+  font-size: 0.8rem;
+}
 
 .logoAnimate .beyouText {
   animation: spin 20s cubic-bezier(.3, .3, .3, .3) infinite;
@@ -368,6 +384,13 @@ a{
   transform-box: fill-box;
  }
 
+ .bm-cross-button > span{
+  position: absolute;
+  top: 5px;
+  right: 14px;
+ }
+
+ 
  /* .logoAnimate .beyouText {
   animation: spin 20s infinite linear;
   transform: translate(50%, 50%);
@@ -524,11 +547,14 @@ display: none;
 .bm-cross-button {
   height: 24px;
   width: 24px;
+  background: #bdc3c7;
+  border-radius: 30px;
 }
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #bdc3c7;
+  background: #fff;
+  color: #fff;
 }
 
 /* General sidebar styles */

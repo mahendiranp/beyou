@@ -7,11 +7,32 @@ import Instagram from "../../../assets/icon/instagram.png";
 import useScreenSize from "@/utils/useScreenSize";
 
 import MenuIcon from "../../../assets/icon/hamburger-menu-icon.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Header() {
   const { isMobile } = useScreenSize();
   const [isOpen, setIsOpen] = useState(false);
+
+  const [stickyClass, setStickyClass] = useState("relative");
+
+  useEffect(() => {
+    console.log("sss");
+    document.addEventListener("scroll", stickNavbar);
+
+    return () => {
+      document.removeEventListener("scroll", stickNavbar);
+    };
+  });
+
+  const stickNavbar = () => {
+    console.log("ssss");
+    if (window !== undefined) {
+      let windowHeight = window.scrollY;
+      windowHeight > 500
+        ? setStickyClass("fixed top-0 left-0 z-50")
+        : setStickyClass("relative");
+    }
+  };
 
   var isMenuOpen = function (id) {
     const section = document.querySelector(`#${id}`);
@@ -23,7 +44,7 @@ export default function Header() {
     setIsOpen(!isOpen);
   };
   return (
-    <div className={styles.headerbg} id="header">
+    <div className={`${styles.headerbg} ${stickyClass}`} id="header">
       <div className="container d-flex w-100 zIndex1">
         <div className={styles.header}>
           {isMobile && (

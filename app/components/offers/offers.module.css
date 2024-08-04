@@ -4,7 +4,8 @@
     padding:24px 50px 54px 50px;
     margin-top: -30px;
     color: var(--tertiary-color);
-    position: relative;
+    position: sticky;
+    top: 93px;
 }
 
 .offerDetails{
@@ -31,7 +32,18 @@
     padding: 0 20px;
 }
 
-.offerValue .desc{
+.stickOfferValue{
+    color: var(--secondary-color);
+    font-family:EditorsNote-light;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    letter-spacing: 0px;
+    padding-left: 20px;
+}
+
+.stickDesc{
     font-size: 20px;
     letter-spacing: normal;
     text-transform: uppercase;
@@ -43,6 +55,18 @@
     color: var(--secondary-color);
     text-transform: uppercase;
     letter-spacing: 1.9px;
+}
+
+.stickyOfferDesc{
+    font-family: worksans-light;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    letter-spacing: 1.9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 12px;
+    padding-top: 4px;
 }
 
 .desc1{
@@ -66,6 +90,36 @@
     text-transform: uppercase;
     padding-top: 0.25rem;
 }
+
+.stickDesc2{
+    font-family: worksans-regular;
+    color: var(--text-light);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.035rem;
+    text-transform: uppercase;
+}
+
+.sticky{
+    border-radius: 0;
+    padding: 0px;
+    z-index: 11;
+    height: 3rem;
+
+}
+
+.stickOfferName{
+    font-size: 12px;
+}
+
+.stickOfferDetails{
+    display: flex;
+    width: 100%;
+}
+
+
 
 @media screen and (max-width: 960px) {
     .offers{
@@ -102,5 +156,42 @@
     line-height: normal;
     letter-spacing: 0.0525rem;
     text-transform: uppercase;
+}
+.sticky{
+    border-radius: 0;
+    padding: 0rem;
+    z-index: 10;
+    height: 3.75rem;
+}
+.stickyOfferDetails{
+    display: flex;
+    flex-flow: column;
+    padding-left: 1rem;
+}
+.stickDesc{
+    font-size: 0.68rem;
+    padding-left: 0.6rem;
+    padding-top: 2px;
+}
+.stickOfferDetails{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.stickOfferValue{
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.06rem;
+    font-size: 1.4rem;
+    padding-left: 0;
+}
+.stickDesc2{
+    font-size: 0.6rem;
+}
+.stickyOfferDesc{
+    padding-left: 0px;
 }
 }
