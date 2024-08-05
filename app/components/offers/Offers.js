@@ -8,7 +8,8 @@ export default function Offers() {
 
   const handleScroll = (e) => {
     const header = document.getElementById("header");
-    const headerHeight = header.offsetHeight + 15;
+    const value = isMobile ? 15 : 5;
+    const headerHeight = header.offsetHeight + value;
     const offers = document.getElementById("offers");
     const offersHeight2 = offers.getBoundingClientRect();
 

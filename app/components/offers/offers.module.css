@@ -5,7 +5,8 @@
     margin-top: -30px;
     color: var(--tertiary-color);
     position: sticky;
-    top: 93px;
+    top: 104px;
+    transition: height 0.5s ease-out
 }
 
 .offerDetails{
@@ -107,7 +108,7 @@
     padding: 0px;
     z-index: 11;
     height: 3rem;
-
+    top: 90px;
 }
 
 .stickOfferName{
