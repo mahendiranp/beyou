@@ -126,7 +126,7 @@
     padding: 0px;
     z-index: 11;
     height: 3rem;
-    top: 90px;
+    top: 104px;
 }
 
 .stickOfferName{
@@ -212,5 +212,8 @@
 }
 .stickyOfferDesc{
     padding-left: 0px;
+}
+.sticky{
+    top: 90px;
 }
 }
