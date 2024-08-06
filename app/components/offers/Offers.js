@@ -59,7 +59,7 @@ export default function Offers() {
               🎁 Special Launch Offer 🎁
             </div>
             <div className={styles.stickOfferValue}>
-              <span className={styles.offerValue1}>20% OFF</span>
+              <span className={styles.stickyOfferValue1}>20% OFF</span>
               <span className={`${styles.desc} view-onmobile`}>
                 on your <br />
                 first order!
@@ -70,11 +70,7 @@ export default function Offers() {
         </a> */}
 
             <div className={styles.stickyOfferDesc}>
-              <span
-                className={`${
-                  sticky ? styles.stickDesc1 : styles.desc1
-                } view-ondesktop`}
-              >
+              <span className={`${styles.stickDesc1} view-ondesktop`}>
                 on your first order!
               </span>
               <span className={`${sticky ? styles.stickDesc2 : styles.desc2}`}>
