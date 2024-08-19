@@ -3,29 +3,37 @@ import { useEffect, useState } from "react";
 import useScreenSize from "@/utils/useScreenSize";
 
 export default function Offers() {
-  const [sticky, setScroll] = useState(false);
+  const [sticky, setSticky] = useState(false);
+  const [reachedHeader, setReachedHeader] = useState(false);
   const { isMobile } = useScreenSize();
+  const [headerHeight, setHeaderHeight] = useState("");
 
-  const handleScroll = (e) => {
-    const header = document.getElementById("header");
-    const value = isMobile ? 15 : 5;
-    const headerHeight = header.offsetHeight + value;
-    const offers = document.getElementById("offers");
-    const offersHeight2 = offers.getBoundingClientRect();
-
-    console.log(headerHeight, offersHeight2.top);
-    console.log(headerHeight > offersHeight2.top);
-    setScroll(headerHeight > offersHeight2.top);
-  };
   useEffect(() => {
     document.body.addEventListener("scroll", handleScroll);
     return () => document.body.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleScroll = (e) => {
+    console.log(reachedHeader);
+    const header = document.getElementById("header");
+    const value = 0;
+    const headerHeight = header.offsetHeight + value;
+    const offers = document.getElementById("offers");
+    const offersHeight2 = offers.getBoundingClientRect();
+    setHeaderHeight(headerHeight);
+    console.log(headerHeight, offersHeight2.top);
+    console.log(headerHeight === offersHeight2.top);
+    setReachedHeader(headerHeight === offersHeight2.top);
+    setSticky(headerHeight === offersHeight2.top);
+  };
   return (
     <div
-      className={`${styles.offers} w-100 zIndex1 ${
+      className={`${styles.offers} w-100 zIndex1 classname ${
         sticky ? `${styles.sticky}` : ""
-      }`}
+      } ${sticky ? "forwards-animation" : "backwards-animation"}`}
+      style={{
+        top: headerHeight,
+      }}
       id="offers"
     >
       <div className="container h-100">

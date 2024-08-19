@@ -5,8 +5,6 @@
     margin-top: -30px;
     color: var(--tertiary-color);
     position: sticky;
-    top: 104px;
-    transition: height 0.5s ease-out
 }
 
 .offerDetails{

@@ -450,7 +450,7 @@ display: none;
   position: fixed;
   z-index: 10;
   right: 2rem;
-  bottom: calc(100vh - 86vh);
+  bottom: calc(100vh - 90vh);
 
 }
 
@@ -659,4 +659,20 @@ display: none;
 .social-media-icons img{
   width: 40px;
   height: 40px;
+}
+
+
+.classname{
+  -moz-transition: all .51s;
+-o-transition: all .51s;
+-webkit-transition: all .51s;
+transition: all .51s;
+}
+
+.backwards-animation{
+  animation-fill-mode:backwards;
+}
+
+.forwards-animation{
+  animation-fill-mode:forwards;
 }
