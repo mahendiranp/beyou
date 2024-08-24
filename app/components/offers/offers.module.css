@@ -5,6 +5,7 @@
     margin-top: -30px;
     color: var(--tertiary-color);
     position: sticky;
+    height: 155px;
 }
 
 .offerDetails{
@@ -141,6 +142,7 @@
 @media screen and (max-width: 960px) {
     .offers{
         padding: 1.69rem 1rem 4rem;
+        height: 215px;
     }
 .offerDetails{
     flex-flow: column;

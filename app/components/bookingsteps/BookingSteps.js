@@ -24,7 +24,10 @@ const data = [
 
 export default function BookingSteps(props) {
   return (
-    <section className={`${styles.background} w-100 zIndex1`} {...props}>
+    <section
+      className={`${styles.background} w-100 zIndex1 classname`}
+      {...props}
+    >
       <div className="container">
         <h3 className={`heading ${styles.heading}`}>
           From concept to closet in <span>four easy steps</span>
