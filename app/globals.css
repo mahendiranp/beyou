@@ -340,6 +340,7 @@ a{
 }
 
 .galleryImg figcaption{
+  display: none;
   padding: 10px 0px;
   text-align: center;
   font-size: 1.2rem;
