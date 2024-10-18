@@ -24,7 +24,7 @@ export default function Footer() {
               </div>
               <div className={styles.labels}>
                 <span className={styles.callIcon}>Call:</span>{" "}
-                <a href="tel:+919019895174">+91 9019895174</a>
+                <a href="tel:+919944590420">+91 9944590420</a>
               </div>
               <div className={styles.labels}>
                 <span className={styles.locationIcon}>Locate:</span> Silver

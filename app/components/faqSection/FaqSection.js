@@ -30,7 +30,7 @@ const faqData = [
   {
     question: "How can I book an appointment?",
     answer:
-      'Booking an appointment is easy! Just click on the "book now" button to give us a call or reach us directly at +91 9019895174.',
+      'Booking an appointment is easy! Just click on the "book now" button to give us a call or reach us directly at +91 9944590420.',
   },
   {
     question: "Are your services available across Bangalore?",

@@ -36,7 +36,7 @@ export default function Home() {
 const WhatsappIcon = () => {
   return (
     <div className="floating-icon">
-      <a href="https://wa.me/+919019895174" target="blank">
+      <a href="https://wa.me/+919944590420" target="blank">
         <img src={WhatAppIcon.src} width={"48"} />
       </a>
     </div>

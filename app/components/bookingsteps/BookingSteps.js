@@ -9,7 +9,7 @@ const data = [
   {
     title: "Design",
     content:
-      "We visit at you place, recommend styles, take precise measurements.",
+      "we visit your place, recommend styles, take precise measurements.",
   },
   {
     title: "Stitch",
@@ -48,8 +48,7 @@ export default function BookingSteps(props) {
               <div className={styles.listBorderStyle}></div>
             </div>
             <p className={styles.content}>
-              We visit at you place, recommend styles, take precise
-              measurements.
+              we visit your place, recommend styles, take precise measurements.
             </p>
           </div>
           <div className={styles.list}>
@@ -79,7 +78,7 @@ export default function BookingSteps(props) {
         </div>
       </div>
       <div className={`container w-100 ${styles.booknow}`}>
-        <a className={`${styles.btnWidth} btn-dark`} href="tel:+919019895174">
+        <a className={`${styles.btnWidth} btn-dark`} href="tel:+919944590420">
           <img src={CallIcon.src} className="btn-icon" />
           <span>Book now</span>
         </a>

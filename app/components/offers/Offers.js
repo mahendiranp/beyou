@@ -45,16 +45,15 @@ export default function Offers() {
             <div className={styles.offerValue}>
               <span className={styles.offerValue1}>15% OFF</span>
               <span className={`${styles.desc} view-onmobile`}>
-                on all above <br />
-                ₹2000/-
+                off on orders above ₹2000
               </span>
             </div>
 
             <div className={styles.offerDesc}>
               <span className={`${styles.desc1} view-ondesktop`}>
-                on all above ₹2000/-
+                off on orders above ₹2000/-
               </span>
-              <span className={styles.desc2}>20th October to 1st November</span>
+              <span className={styles.desc2}>20th Oct- 1st Nov</span>
             </div>
           </div>
         )}
@@ -66,20 +65,17 @@ export default function Offers() {
             <div className={styles.stickOfferValue}>
               <span className={styles.stickyOfferValue1}>15% OFF</span>
               <span className={`${styles.desc} view-onmobile`}>
-                on all above ₹2000/- <br />
+                off on orders above ₹2000/- <br />
                 ₹2000/-
               </span>
             </div>
-            {/* <a href="https://api.whatsapp.com/send?phone=50600000000">
-          Click to connect +506 0000 0000
-        </a> */}
 
             <div className={styles.stickyOfferDesc}>
               <span className={`${styles.stickDesc1} view-ondesktop`}>
-                on all above ₹2000/-
+                off on orders above ₹2000/-
               </span>
               <span className={`${sticky ? styles.stickDesc2 : styles.desc2}`}>
-                20th October to 1st November
+                20th Oct- 1st Nov
               </span>
             </div>
           </div>
@@ -94,15 +90,12 @@ export default function Offers() {
               <div className={styles.stickOfferValue}>
                 <span className={styles.stickOfferValue1}>15% OFF</span>
                 <span className={`${styles.stickDesc}`}>
-                  on all above
-                  <br /> ₹2000/-
+                  on all above ₹2000/-
                 </span>
               </div>
 
               <div className={styles.stickyOfferDesc}>
-                <span className={styles.stickDesc2}>
-                  20th October to 1st November
-                </span>
+                <span className={styles.stickDesc2}>20th Oct- 1st Nov</span>
               </div>
             </div>
           </div>

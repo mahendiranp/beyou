@@ -132,7 +132,7 @@ export default function Header() {
             {/* <p className={`${styles.text} view-ondesktop`}>
               Serviceable in and around <span>HSR & Haralur - Bengaluru</span>
             </p> */}
-            <a className="btn-light" href="tel:+919019895174">
+            <a className="btn-light" href="tel:+919944590420">
               <span className="callicon"></span>
               <span className="header-btn">Book now</span>
             </a>

@@ -19,7 +19,7 @@ export default function (props) {
               confident.”
             </h5>
             <div className={styles.name}>
-              hi i’m, <span>Pooja Shree</span>
+              Hi i’m, <span>Pooja Shree</span>
             </div>
             <p className={styles.description}>
               Founder and lead designer at beyou. My journey in fashion began
